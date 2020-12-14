@@ -1,7 +1,7 @@
 /*!
 Theme Name: Money Mouth
 Theme URI:
-Author: Marko Babovic
+Author: Pixoff
 Author URI:
 Description: Custom WordPress theme for "Money Mouth" website
 Version: 1.0.0
@@ -7707,36 +7707,52 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /*! Utilities */
-.mm-color--purple {
-  color: #8a507c !important;
+.mm-color--black {
+  color: #000000 !important;
 }
 
-.mm-bg-color--purple {
-  background-color: #8a507c !important;
+.mm-bg-color--black {
+  background-color: #000000 !important;
 }
 
-.mm-fill--purple {
-  fill: #8a507c !important;
+.mm-fill--black {
+  fill: #000000 !important;
 }
 
-.mm-stroke--purple {
-  stroke: #8a507c !important;
+.mm-stroke--black {
+  stroke: #000000 !important;
 }
 
-.mm-color--orange {
-  color: #8a507c !important;
+.mm-color--white {
+  color: #ffffff !important;
 }
 
-.mm-bg-color--orange {
-  background-color: #8a507c !important;
+.mm-bg-color--white {
+  background-color: #ffffff !important;
 }
 
-.mm-fill--orange {
-  fill: #8a507c !important;
+.mm-fill--white {
+  fill: #ffffff !important;
 }
 
-.mm-stroke--orange {
-  stroke: #8a507c !important;
+.mm-stroke--white {
+  stroke: #ffffff !important;
+}
+
+.mm-color--light-black {
+  color: #0f0c0a !important;
+}
+
+.mm-bg-color--light-black {
+  background-color: #0f0c0a !important;
+}
+
+.mm-fill--light-black {
+  fill: #0f0c0a !important;
+}
+
+.mm-stroke--light-black {
+  stroke: #0f0c0a !important;
 }
 
 /*! Input fields  */
@@ -7745,12 +7761,16 @@ a {
   color: #0f0c0a;
 }
 
-body.purple a:hover, body.purple a:focus {
-  color: #8a507c;
+body.black a:hover, body.black a:focus {
+  color: #000000;
 }
 
-body.orange a:hover, body.orange a:focus {
-  color: #8a507c;
+body.white a:hover, body.white a:focus {
+  color: #ffffff;
+}
+
+body.light-black a:hover, body.light-black a:focus {
+  color: #0f0c0a;
 }
 
 /*! Icons  */
@@ -8133,20 +8153,28 @@ input[type=radio]:checked {
   margin-bottom: 0;
 }
 
-.purple .mm-feautre-block-wrapper .feautre-block {
-  border-color: rgba(138, 80, 124, 0.9);
+.black .mm-feautre-block-wrapper .feautre-block {
+  border-color: rgba(0, 0, 0, 0.9);
 }
 
-.purple .mm-feautre-block-wrapper .feautre-block h4 {
-  color: #8a507c;
+.black .mm-feautre-block-wrapper .feautre-block h4 {
+  color: #000000;
 }
 
-.orange .mm-feautre-block-wrapper .feautre-block {
-  border-color: rgba(138, 80, 124, 0.9);
+.white .mm-feautre-block-wrapper .feautre-block {
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
-.orange .mm-feautre-block-wrapper .feautre-block h4 {
-  color: #8a507c;
+.white .mm-feautre-block-wrapper .feautre-block h4 {
+  color: #ffffff;
+}
+
+.light-black .mm-feautre-block-wrapper .feautre-block {
+  border-color: rgba(15, 12, 10, 0.9);
+}
+
+.light-black .mm-feautre-block-wrapper .feautre-block h4 {
+  color: #0f0c0a;
 }
 
 body {

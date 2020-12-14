@@ -10,15 +10,16 @@ $c__dark-grey: #828282;
 $c__dark-red: #a00;
 
 // Main colors:
-$c__primary: #8a507c;
-$c__secondary: #8a507c;
+$c__primary: #000000;
+$c__secondary: #000000;
 
 
 // Color array
 
 $colors: (
-	'purple' $c__primary,
-	'orange' $c__secondary,
+	'black' $c__black,
+	'white' $c__white,
+	'light-black' $c__light-black,
 );
 
 
