@@ -14,122 +14,115 @@ b {
 }
 
 %h1 {
-	font-family: $t__font-sec;
+	font-family: $t__font-main;
 	@include rem(font-size, 50px);
 	line-height: normal;
-	font-weight: 400;
-	letter-spacing: 1.03px;
+	font-weight: 700;
 	color: $c__black;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 72px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 35px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 100px);
-		letter-spacing: 1.52px;
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 25px);
 	}
 }
 
 %h2 {
-	font-family: $t__font-sec;
-	@include rem(font-size, 34px);
-	font-weight: 400;
-	letter-spacing: 0.73px;
+	font-family: $t__font-main;
+	@include rem(font-size, 35px);
+	font-weight: 700;
 	line-height: normal;
 	color: $c__black;
-	text-transform: uppercase;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 50px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 25px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 72px);
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 22px);
 	}
 }
 
 %h3 {
-	font-family: $t__font-sec;
+	font-family: $t__font-main;
 	@include rem(font-size, 28px);
-	font-weight: 400;
-	letter-spacing: 0.56px;
+	font-weight: 700;
 	line-height: normal;
 	color: $c__black;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 34px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 22px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 56px);
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 18px);
 	}
 }
 
 %h4 {
-	font-family: $t__font-sec;
+	font-family: $t__font-main;
 	@include rem(font-size, 22px);
 	font-weight: 400;
-	letter-spacing: 0.56px;
 	color: $c__black;
 	line-height: normal;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 28px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 20px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 42px);
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 18px);
 	}
 }
 
 %h5 {
 	font-family: $t__font-main;
-	@include rem(font-size, 17px);
+	@include rem(font-size, 18px);
 	font-weight: 700;
 	letter-spacing: 0.35px;
 	color: $c__black;
 	line-height: normal;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 22px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 16px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 34px);
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 14px);
 	}
 }
 
 %h6 {
 	font-family: $t__font-main;
-	@include rem(font-size, 14px);
+	@include rem(font-size, 16px);
 	font-weight: 700;
 	color: $c__black;
 	line-height: normal;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 17px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 16px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 28px);
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 14px);
 	}
 }
 
 %mm-text {
 	font-family: $t__font-main;
-	@include rem(font-size, 12px);
+	@include rem(font-size, 16px);
 	line-height: 1.5;
 	color: $c__black;
-	font-weight: 300;
+	font-weight: 400;
 
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-down(md) {
 		@include rem(font-size, 16px);
 	}
 
-	@include media-breakpoint-up(lg) {
-		@include rem(font-size, 20px);
-		line-height: 31px;
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 14px);
 	}
 }
 
@@ -139,9 +132,12 @@ b {
 	line-height: 1.7;
 	color: $c__light-black;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 24px);
-		line-height: 1.62;
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 18px);
+	}
+
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 16px);
 	}
 }
 
@@ -151,9 +147,12 @@ b {
 	line-height: 1.857;
 	color: $c__light-black;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 16px);
-		line-height: 1.63;
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 12px);
+	}
+
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 12px);
 	}
 }
 
@@ -166,8 +165,12 @@ b {
 	letter-spacing: -0.36px;
 	color: $c__light-black;
 
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 24px);
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 16px);
+	}
+
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 14px);
 	}
 }
 
@@ -178,11 +181,6 @@ b {
 	font-style: normal;
 	line-height: 1.55;
 	color: $c__light-black;
-
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 20px);
-		line-height: 1.5;
-	}
 }
 
 %mm-label--dimmed {
@@ -191,11 +189,6 @@ b {
 	font-weight: normal;
 	line-height: 1.55;
 	color: $c__grey;
-
-	@include media-breakpoint-up(md) {
-		@include rem(font-size, 20px);
-		line-height: 1.5;
-	}
 }
 
 %mm-link--menu {
@@ -252,60 +245,36 @@ h1,
 .h1 {
 	@extend %h1;
 	@include rem(margin-bottom, 22px);
-
-	@include media-breakpoint-up(md) {
-		@include rem(margin-bottom, 40px);
-	}
 }
 
 h2,
 .h2 {
 	@extend %h2;
 	@include rem(margin-bottom, 16px);
-
-	@include media-breakpoint-up(md) {
-		@include rem(margin-bottom, 32px);
-	}
 }
 
 h3,
 .h3 {
 	@extend %h3;
 	@include rem(margin-bottom, 16px);
-
-	@include media-breakpoint-up(md) {
-		@include rem(margin-bottom, 32px);
-	}
 }
 
 h4,
 .h4 {
 	@extend %h4;
 	@include rem(margin-bottom, 12px);
-
-	@include media-breakpoint-up(md) {
-		@include rem(margin-bottom, 24px);
-	}
 }
 
 h5,
 .h5 {
 	@extend %h5;
 	@include rem(margin-bottom, 10px);
-
-	@include media-breakpoint-up(md) {
-		@include rem(margin-bottom, 20px);
-	}
 }
 
 h6,
 .h6 {
 	@extend %h6;
 	@include rem(margin-bottom, 8px);
-
-	@include media-breakpoint-up(md) {
-		@include rem(margin-bottom, 16px);
-	}
 }
 
 p,

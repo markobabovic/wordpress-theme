@@ -19,11 +19,11 @@
 		<div class="col-12">
 			<h2 class="p-3 mt-5">Colors</h2>
 			<div class="row">
-				<div class="col-2 mm-text--center py-3 mm-bg-color--black">
-					<span class="mm-color--white">black</span>
+				<div class="col-2 mm-text--center py-3 mm-bg-color--primary">
+					<span class="mm-color--white">primary</span>
 				</div>
-				<div class="col-2 mm-text--center py-3 mm-bg-color--light-black">
-					<span class="mm-color--white">light-black</span>
+				<div class="col-2 mm-text--center py-3 mm-bg-color--secondary">
+					<span class="mm-color--white">secondary</span>
 				</div>
 				<div class="col-2 mm-text--center py-3 mm-bg-color--white">
 					<span class="mm-color--light-black">white</span>
