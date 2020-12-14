@@ -1,8 +1,8 @@
 /*!
 Theme Name: Money Mouth
 Theme URI:
-Author: Pixoff
-Author URI:
+Author: Marko Babovic
+Author URI: markobabovic.com
 Description: Custom WordPress theme for "Money Mouth" website
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -7707,6 +7707,38 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /*! Utilities */
+.mm-color--primary {
+  color: #000000 !important;
+}
+
+.mm-bg-color--primary {
+  background-color: #000000 !important;
+}
+
+.mm-fill--primary {
+  fill: #000000 !important;
+}
+
+.mm-stroke--primary {
+  stroke: #000000 !important;
+}
+
+.mm-color--secondary {
+  color: #000000 !important;
+}
+
+.mm-bg-color--secondary {
+  background-color: #000000 !important;
+}
+
+.mm-fill--secondary {
+  fill: #000000 !important;
+}
+
+.mm-stroke--secondary {
+  stroke: #000000 !important;
+}
+
 .mm-color--black {
   color: #000000 !important;
 }
@@ -7759,6 +7791,14 @@ h1, h2, h3, h4, h5, h6,
 /*! Links  */
 a {
   color: #0f0c0a;
+}
+
+body.primary a:hover, body.primary a:focus {
+  color: #000000;
+}
+
+body.secondary a:hover, body.secondary a:focus {
+  color: #000000;
 }
 
 body.black a:hover, body.black a:focus {
@@ -8022,159 +8062,6 @@ input[type=radio] {
 input[type=radio]:checked {
   outline: none;
   background-image: url("assets/images/radio-checked-icon.svg");
-}
-
-.mm-feautre-block-wrapper {
-  padding-top: 15px;
-}
-
-@media (min-width: 768px) {
-  .mm-feautre-block-wrapper {
-    padding-top: 40px;
-  }
-}
-
-@media (min-width: 992px) {
-  .mm-feautre-block-wrapper {
-    padding-bottom: 80px;
-  }
-}
-
-.mm-feautre-block-wrapper figure {
-  margin: -25px -25px 0 -25px;
-  padding-top: 100%;
-  z-index: -1;
-  position: relative;
-  max-width: initial;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .mm-feautre-block-wrapper figure {
-    margin: -80px -80px 0 -80px;
-  }
-}
-
-@media (min-width: 992px) {
-  .mm-feautre-block-wrapper figure {
-    padding-top: 0;
-    overflow: inherit;
-    width: 130%;
-    position: absolute;
-    top: -80px;
-    bottom: -120px;
-    margin: 0;
-    margin-left: 15px;
-  }
-}
-
-.mm-feautre-block-wrapper figure img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 0;
-}
-
-@media (min-width: 992px) {
-  .mm-feautre-block-wrapper figure img {
-    position: static;
-    height: calc( 100% - 26px);
-    -webkit-box-shadow: 0 0 8px 0 rgba(15, 12, 10, 0.15);
-            box-shadow: 0 0 8px 0 rgba(15, 12, 10, 0.15);
-  }
-}
-
-.mm-feautre-block-wrapper figure figcaption {
-  font-family: "Proxima Nova", Arial, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.63;
-  color: rgba(15, 12, 10, 0.7);
-  text-align: right;
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .mm-feautre-block-wrapper figure figcaption {
-    display: inherit;
-  }
-}
-
-.mm-feautre-block-wrapper .feautre-block {
-  border: 3px solid;
-  padding: 10px;
-}
-
-@media (min-width: 768px) {
-  .mm-feautre-block-wrapper .feautre-block {
-    padding: 40px;
-  }
-}
-
-.mm-feautre-block-wrapper .feautre-block .feautre-block-title-holder {
-  margin-top: -250px;
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.mm-feautre-block-wrapper .feautre-block .feautre-block-title-holder h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-
-@media (min-width: 992px) {
-  .mm-feautre-block-wrapper .feautre-block .feautre-block-title-holder {
-    margin-top: inherit;
-    height: inherit;
-    display: inherit;
-  }
-}
-
-.mm-feautre-block-wrapper .feautre-block .feautre-block-content-holder {
-  padding: 12px 0 0 0;
-  padding: 0.75rem 0 0 0;
-}
-
-@media (min-width: 768px) {
-  .mm-feautre-block-wrapper .feautre-block .feautre-block-content-holder {
-    padding: 0 40px 0 0;
-    padding: 0 2.5rem 0 0;
-  }
-}
-
-.mm-feautre-block-wrapper .feautre-block p {
-  margin-bottom: 0;
-}
-
-.black .mm-feautre-block-wrapper .feautre-block {
-  border-color: rgba(0, 0, 0, 0.9);
-}
-
-.black .mm-feautre-block-wrapper .feautre-block h4 {
-  color: #000000;
-}
-
-.white .mm-feautre-block-wrapper .feautre-block {
-  border-color: rgba(255, 255, 255, 0.9);
-}
-
-.white .mm-feautre-block-wrapper .feautre-block h4 {
-  color: #ffffff;
-}
-
-.light-black .mm-feautre-block-wrapper .feautre-block {
-  border-color: rgba(15, 12, 10, 0.9);
-}
-
-.light-black .mm-feautre-block-wrapper .feautre-block h4 {
-  color: #0f0c0a;
 }
 
 body {
