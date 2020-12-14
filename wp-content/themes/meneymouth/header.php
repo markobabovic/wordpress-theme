@@ -20,6 +20,31 @@
 
 	<?php wp_head(); ?>
 </head>
+<div class="body-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/page-bg.jpg);"></div>
+
+
+<header class="site-header">
+	<div class="component-container">
+		<div class="inner-component">
+			<div class="wrap-header-elements">
+				<div class="site-logo">
+					<a class="logo" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-main.png" /></a>
+				</div>
+				<div class="site-navigation">
+					<nav>
+						<ul>
+							<li class="current-menu-item"><a href="">Home</a></li>
+							<li><a href="">Who we are</a></li>
+							<li><a href="">What we do</a></li>
+							<li><a href="">Contact Us</a></li>
+						</ul>
+						<a class="mm-button primary" href="">Sing Up</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
 <body <?php //body_class('loading'); ?>>
 

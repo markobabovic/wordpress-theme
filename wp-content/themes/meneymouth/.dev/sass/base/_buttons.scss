@@ -8,24 +8,30 @@ input[type="submit"],
 .mm-button,
 %mm-button {
 	@extend %mm-label;
+	border-radius: 70px;
 	text-decoration: none;
-	border-style: solid;
-	border-width: 2px;
 	padding: 11px 11px;
 	display: inline-block;
-	min-width: 145px;
-	font-weight: 700;
+	min-width: 354px;
+	font-weight: 400;
 	text-align: center;
-	letter-spacing: 1.2px;
-	background-color: rgba(255, 255, 255, 0.07);
+	letter-spacing: -2.74px;
+
 	@include transition(all 0.3s);
 
-	@include media-breakpoint-up(md) {
-		min-width: 255px;
-		padding: 14px 15px;
-		letter-spacing: 2.18px;
+
+	&.primary {
+		background-color: $c__primary;
+		color: $c__white;
 	}
 
+	&.secondary {
+		background-color: rgba($c__black, 0.11);
+		color: $c__black;
+	}
 
+	@include media-breakpoint-down(xl) {
+		min-width: 255px;
+	}
 }
 

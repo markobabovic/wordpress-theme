@@ -1,1 +1,115 @@
+section.banner-component {
+	position: relative;
+	height: 100vh;
 
+	.banner-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: none!important;
+
+		img {
+			@include img-cover(center);
+		}
+	}
+
+	.component-container {
+		width: calc(2280px + 220px);
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 110px;
+		height: 100%;
+
+		@include media-breakpoint-down(xxl) {
+			padding: 0 60px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+
+		.inner-component {
+			height: 100%;
+			@include flexbox;
+			@include align-items(center);
+
+			.banner-heading-form {
+				width: 100%;
+				max-width: 1720px;
+				margin: 0 auto;
+
+				.text {
+					text-align: center;
+					margin-bottom: 75px;
+
+					h1 {
+						@extend %h1;
+					}
+
+					p {
+						@include rem(font-size, 60px);
+						color: rgba($c__white, 0.5);
+						font-weight: normal;
+						line-height: 90px;
+
+						@include media-breakpoint-down(xxl) {
+							@include rem(font-size, 45px);
+							line-height: 65px
+						}
+
+						@include media-breakpoint-down(lg) {
+							@include rem(font-size, 40px);
+							line-height: 50px
+						}
+
+						@include media-breakpoint-down(sm) {
+							@include rem(font-size, 25px);
+							line-height: 40px
+						}
+
+					}
+				}
+
+				.wrap-form {
+					form {
+						.sing-up-form {
+							@include flexbox;
+							justify-content: center;
+
+							@include media-breakpoint-down(sm) {
+								@include flex-wrap(wrap);
+							}
+
+							.input-field {
+								margin: 0 12.5px;
+
+								@include media-breakpoint-down(sm) {
+									min-width: initial !important;
+									width: 100%;
+									max-width: 380px;
+								}
+
+								&.email {
+									min-width: 740px;
+									@include media-breakpoint-down(xl) {
+										min-width: 540px;
+									}
+
+									@include media-breakpoint-down(sm) {
+										margin-bottom: 30px;
+									}
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
