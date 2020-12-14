@@ -1,0 +1,15 @@
+/*! Shame */
+
+// Everything else...
+.wp-block-columns {
+	margin-bottom: 0;
+}
+
+.wp-block-column {
+	margin: 0 !important;
+	align-self: auto;
+
+	@media only screen and (min-width: 600px) and (max-width: 781px)  {
+		flex-basis: auto !important;
+	}
+}

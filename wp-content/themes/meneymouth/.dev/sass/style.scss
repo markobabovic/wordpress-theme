@@ -1,0 +1,43 @@
+/*!
+Theme Name: Money Mouth
+Theme URI:
+Author: Pixoff
+Author URI:
+Description: Custom WordPress theme for "Money Mouth" website
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: mm
+Tags: custom-background, custom-logo, custom-menu
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*! Custom Bootstrap variables */
+@import "vendor/bootstrap-custom";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "global/variables/variables";
+@import "global/mixins";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+
+/*! Vendor styles */
+
+@import "vendor/normalize.scss";
+
+
+/*! Custom mmrid-AG styles */
+
+@import "global/global";
+@import "base/base";
+@import "components/components";
+@import "pages/pages";
+@import "site/site";
+@import "shame";
+
+/*! woocommerce style */
+//@import "woocommerce";

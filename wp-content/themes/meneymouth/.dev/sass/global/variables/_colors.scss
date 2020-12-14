@@ -1,0 +1,27 @@
+// Colors
+
+// Monochrome:
+$c__black: #000000;
+$c__light-black: #0f0c0a;
+$c__white: #ffffff;
+$c__grey: #b7b7b7;
+$c__light-grey: #f3f3f3;
+$c__dark-grey: #828282;
+$c__dark-red: #a00;
+
+// Main colors:
+$c__primary: #8a507c;
+$c__secondary: #8a507c;
+
+
+// Color array
+
+$colors: (
+	'purple' $c__primary,
+	'orange' $c__secondary,
+);
+
+
+// RGBA greys for box shadows etc.
+$c__warm-grey-25: rgba(112, 112, 112, 0.25);
+$c__warm-grey-60: rgba(147, 147, 147, 0.6);

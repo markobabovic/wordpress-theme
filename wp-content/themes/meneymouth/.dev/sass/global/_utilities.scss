@@ -1,0 +1,11 @@
+/*! Utilities */
+
+
+// Color utilities
+
+@each $name, $value in $colors {
+	.mm-color--#{$name} { color: $value !important; }
+	.mm-bg-color--#{$name} { background-color: $value !important; }
+	.mm-fill--#{$name} { fill: $value !important; }
+	.mm-stroke--#{$name} { stroke: $value !important; }
+}

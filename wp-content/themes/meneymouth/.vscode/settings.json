@@ -1,0 +1,8 @@
+{
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	"editor.fontLigatures": true,
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+	"editor.renderIndentGuides": true
+}

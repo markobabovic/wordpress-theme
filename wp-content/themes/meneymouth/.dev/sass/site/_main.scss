@@ -1,0 +1,38 @@
+body {
+	// some styles
+	overflow-x: hidden;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+}
+
+html,body{
+	min-height: 100%; /* Change 01. Div with height of 100% */
+	height: auto;
+}
+
+#wrap-page.wrap-site-page {
+	position: relative;
+}
+
+input {
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: inherit;
+		font-size: inherit;
+	}
+
+	&::-moz-placeholder { /* Firefox 19+ */
+		color: inherit;
+		font-size: inherit;
+	}
+
+	&:-ms-input-placeholder { /* IE 10+ */
+		color: inherit;
+		font-size: inherit;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+		color: inherit;
+		font-size: inherit;
+	}
+}
+

@@ -1,0 +1,14 @@
+/*! Input fields  */
+
+
+form {
+    label {
+        @extend %mm-label;
+    }
+
+    input {
+        &::placeholder {
+            @extend %mm-label--dimmed;
+        }
+    }
+}
