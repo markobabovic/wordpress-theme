@@ -56,19 +56,19 @@ b {
 	font-family: $t__font-main;
 	@include rem(font-size, 113px);
 	line-height: normal;
-	font-weight: bold;
+	font-weight: normal;
 	color: $c__white;
 
 	@include media-breakpoint-down(xxl) {
-		@include rem(font-size, 80px);
+		@include rem(font-size, 75px);
 	}
 
 	@include media-breakpoint-down(lg) {
-		@include rem(font-size, 60px);
+		@include rem(font-size, 55px);
 	}
 
 	@include media-breakpoint-down(md) {
-		@include rem(font-size, 35px);
+		@include rem(font-size, 45px);
 	}
 }
 
@@ -77,14 +77,18 @@ b {
 	@include rem(font-size, 101px);
 	font-weight: 700;
 	line-height: normal;
-	color: $c__black;
+	color: $c__primary;
+
+	@include media-breakpoint-down(xxl) {
+		@include rem(font-size, 75px);
+	}
 
 	@include media-breakpoint-down(md) {
 		@include rem(font-size, 50px);
 	}
 
 	@include media-breakpoint-down(sm) {
-		@include rem(font-size, 25px);
+		@include rem(font-size, 36px);
 	}
 }
 
@@ -138,14 +142,14 @@ b {
 }
 
 %h6 {
-	font-family: $t__font-main;
-	@include rem(font-size, 16px);
-	font-weight: 700;
-	color: $c__black;
+	font-family: $t__font-sec;
+	@include rem(font-size, 31px);
+	color: $c__white;
 	line-height: normal;
+	text-transform: uppercase;
 
 	@include media-breakpoint-down(md) {
-		@include rem(font-size, 16px);
+		@include rem(font-size, 24px);
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -160,8 +164,16 @@ b {
 	color: rgba($c__light-black, 0.5);
 	font-weight: 400;
 
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(xxl) {
+		@include rem(font-size, 35px);
+	}
+
+	@include media-breakpoint-down(xl) {
 		@include rem(font-size, 27px);
+	}
+
+	@include media-breakpoint-down(lg) {
+		@include rem(font-size, 22px);
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -175,8 +187,16 @@ b {
 	line-height: 1.7;
 	color: $c__light-black;
 
-	@include media-breakpoint-down(md) {
-		@include rem(font-size, 30px);
+	@include media-breakpoint-down(xxl) {
+		@include rem(font-size, 36px);
+	}
+
+	@include media-breakpoint-down(xl) {
+		@include rem(font-size, 29px);
+	}
+
+	@include media-breakpoint-down(lg) {
+		@include rem(font-size, 25px);
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -224,6 +244,14 @@ b {
 	font-style: normal;
 	line-height: normal;
 	color: $c__white;
+
+	@include media-breakpoint-down(xl) {
+		@include rem(font-size, 25px);
+	}
+
+	@include media-breakpoint-down(lg) {
+		@include rem(font-size, 20px);
+	}
 }
 
 %mm-label--dimmed {
@@ -244,8 +272,18 @@ b {
 	color: rgba($c__white, 0.5);
 
 	@include media-breakpoint-down(xxl) {
-		@include rem(font-size, 29px);
+		@include rem(font-size, 25px);
 		padding: 0 22px;
+	}
+
+	@include media-breakpoint-down(md) {
+		@include rem(font-size, 20px);
+		padding: 0 10px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 20px);
+		padding: 15px 0;
 	}
 }
 

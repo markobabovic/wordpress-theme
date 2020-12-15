@@ -113,3 +113,565 @@ section.banner-component {
 		}
 	}
 }
+
+section.image-text-component {
+	.component-container {
+		width: calc(2280px + 220px);
+		padding: 0 115px;
+		margin: 0 auto;
+		max-width: 100%;
+
+		@include media-breakpoint-down(xxl) {
+			padding: 0 60px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 0 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+
+		.inner-component {
+			padding-top: 110px;
+			padding-bottom: 110px;
+
+			@include media-breakpoint-down(md) {
+				padding: 40px 0;
+			}
+
+			.component-heading {
+				h2 {
+					@extend %h2;
+				}
+
+				p {
+					@extend %mm-text;
+					font-weight: 500;
+				}
+			}
+
+			.image-text-wrapper {
+				@include flexbox;
+				@include align-items(center);
+
+				@include media-breakpoint-down(md) {
+					@include flex-wrap(wrap);
+				}
+
+				.image {
+					margin-left: -25vw;
+
+					@include media-breakpoint-down(xxl) {
+						margin-left: -30vw;
+					}
+
+					@include media-breakpoint-down(xl) {
+						margin-left: -40vw;
+					}
+
+					@include media-breakpoint-down(md) {
+						display: block;
+						width: 100%;
+						margin: 0 0 50px 0;
+					}
+				}
+
+				.desc {
+					width: 80%;
+					padding-left: 60px;
+
+					@include media-breakpoint-down(xxl) {
+						width: 90%;
+					}
+
+					@include media-breakpoint-down(md) {
+						width: 100%;
+						padding: 0;
+					}
+
+					h3 {
+						@extend %h1;
+						color: $c__primary;
+					}
+
+					.text {
+						p {
+							@extend %mm-text;
+							margin-bottom: 5px;
+
+							strong {
+								@extend %mm-text--large;
+								font-weight: 500;
+								display: block;
+							}
+						}
+
+						ul {
+							margin: 0 0 50px 0;
+
+							li {
+								list-style-type: none;
+								position: relative;
+								@extend %mm-text;
+								@include rem(font-size, 37px);
+								margin-bottom: 35px;
+
+								@include media-breakpoint-down(xl) {
+									@include rem(font-size, 29px);
+								}
+
+								@include media-breakpoint-down(lg) {
+									@include rem(font-size, 25px);
+								}
+
+								@include media-breakpoint-down(sm) {
+									@include rem(font-size, 20px);
+									margin-bottom: 20px;
+								}
+
+								&:after {
+									position: absolute;
+									content: "";
+									width: 10px;
+									height: 10px;
+									background-color: $c__primary;
+									border-radius: 50%;
+									left: -30px;
+									top: 20px;
+								}
+							}
+						}
+					}
+
+					.mm-button {
+						width: 40%;
+						min-width: initial;
+						max-width: 380px;
+
+						@include media-breakpoint-down(sm) {
+							display: block;
+							width: 100%;
+							max-width: 380px;
+							margin: 0 auto;
+						}
+
+						&.primary {
+							margin-right: 30px;
+
+							@include media-breakpoint-down(lg) {
+								margin-right: 20px;
+							}
+
+							@include media-breakpoint-down(sm) {
+								margin: 0 auto 20px auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+section.slider-component {
+	.component-container {
+		width: calc(2240px + 260px);
+		padding: 0 130px;
+		margin: 0 auto;
+		max-width: 100%;
+
+		@include media-breakpoint-down(xxl) {
+			padding: 0 60px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 0 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+
+		.inner-component {
+			padding: 80px 0;
+
+			.component-heading {
+				margin-bottom: 90px;
+				h2 {
+					@extend %h2;
+				}
+
+				p {
+					@extend %mm-text;
+					font-weight: 500;
+					margin: 0;
+				}
+			}
+
+			.wrap-slider-items {
+				margin: 0 -45px;
+
+				@include media-breakpoint-down(xl) {
+					margin: 0 -25px;
+				}
+
+				@include media-breakpoint-down(md) {
+					margin: 0 -15px;
+				}
+
+				.slide {
+					width: 50%;
+					padding: 0 45px;
+
+					@include media-breakpoint-down(xl) {
+						padding: 0 25px;
+					}
+
+					@include media-breakpoint-down(md) {
+						padding: 0 15px;
+					}
+
+					.inner-slide {
+						position: relative;
+
+						.image {
+							border-radius: 22px;
+							overflow: hidden;
+
+							img {
+								@include img-cover(center);
+							}
+						}
+
+						.text {
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							right: 0;
+							top: 0;
+							z-index: 1;
+							@include flexbox;
+							justify-content: center;
+							@include align-items(center);
+
+							span {
+								@include rem(font-size, 75px);
+								text-transform: uppercase;
+								font-family: $t__font-main;
+								color: $c__white;
+								display: block;
+
+								@include media-breakpoint-down(xl) {
+									@include rem(font-size, 45px);
+								}
+
+								@include media-breakpoint-down(md) {
+									@include rem(font-size, 36px);
+								}
+							}
+						}
+					}
+				}
+
+				ul {
+					&.slick-dots {
+						padding: 0;
+						@include flexbox;
+						@include align-items(center);
+						justify-content: center;
+						margin: 75px 0 0 0;
+
+						li {
+							list-style-type: none;
+							width: 14px;
+							height: 14px;
+							border-radius: 50%;
+							border: none;
+							outline: none;
+							background-color: rgba($c__primary, 0.3);
+							text-indent: -99999999px;
+							cursor: pointer;
+							margin: 0 45px;
+
+							@include media-breakpoint-down(sm) {
+								margin: 0 10px;
+							}
+
+							&.slick-active {
+								background-color: rgba($c__primary, 1);
+								width: 21px;
+								height: 21px;
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+section.accordion-tabs-slider-component {
+	.component-container {
+		width: calc(2240px + 260px);
+		padding: 0 130px;
+		margin: 0 auto;
+		max-width: 100%;
+
+		@include media-breakpoint-down(xxl) {
+			padding: 0 60px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 0 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+
+		.inner-component {
+			padding:  100px 0;
+
+			@include media-breakpoint-down(sm) {
+				padding: 40px 0;
+			}
+
+			.component-heading {
+				margin-bottom: 110px;
+
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 60px;
+				}
+
+				h2 {
+					@extend %h2;
+				}
+
+				p {
+					@extend %mm-text;
+					font-weight: 500;
+					margin: 0;
+				}
+			}
+
+			.wrap-accordion-tabs-slider {
+				.tab {
+					border-radius: 22px;
+					background-color: $c__white;
+					padding: 65px 75px 65px 65px;
+					margin-bottom: 40px;
+					-webkit-box-shadow: 0px 0px 29px 13px rgba(0, 0, 0, 0.07);
+					box-shadow: 0px 0px 29px 13px rgba(0, 0, 0, 0.07);
+
+					@include media-breakpoint-down(lg) {
+						padding: 35px 45px 35px 35px;
+					}
+
+					@include media-breakpoint-down(sm) {
+						padding: 15px;
+						margin-bottom: 20px;
+					}
+
+					.tab-heading {
+						position: relative;
+						cursor: pointer;
+
+						h5 {
+							@include rem(font-size, 37px);
+							line-height: 44px;
+							color: $c__black;
+							font-family: $t__font-sec;
+							margin-bottom: 0;
+
+							@include media-breakpoint-down(lg) {
+								@include rem(font-size, 30px);
+								line-height: 40px;
+							}
+
+							@include media-breakpoint-down(md) {
+								@include rem(font-size, 26px);
+								line-height: 32px;
+							}
+
+							@include media-breakpoint-down(sm) {
+								@include rem(font-size, 20px);
+								line-height: 32px;
+							}
+						}
+
+						.tab-heading-icon {
+							width: 32px;
+							position: absolute;
+							right: -25px;
+							top: 50%;
+							@include vertical-center();
+
+							@include media-breakpoint-down(sm) {
+								width: 20px;
+								right: -5px;
+							}
+
+							span {
+								display: block;
+								background-color: $c__primary;
+								border-radius: 5px;
+								height: 8px;
+
+								@include media-breakpoint-down(sm) {
+									height: 5px;
+								}
+
+								&:first-of-type {
+									margin-top: -4px;
+								}
+
+								&:last-of-type {
+									@include rotate(90deg);
+									margin-top: -8px;
+
+									@include media-breakpoint-down(sm) {
+										margin-top: -5px;
+									}
+								}
+							}
+						}
+					}
+
+					.tab-text {
+						padding-top: 20px;
+
+						@include media-breakpoint-down(sm) {
+							padding-top: 10px
+						}
+
+						p {
+							@include rem(font-size, 33px);
+							line-height: 55px;
+							color: $c__grey;
+							font-family: $t__font-sec;
+							margin-bottom: 0;
+
+
+							@include media-breakpoint-down(lg) {
+								@include rem(font-size, 28px);
+								line-height: 45px;
+							}
+
+							@include media-breakpoint-down(md) {
+								@include rem(font-size, 24px);
+								line-height: 38px;
+							}
+
+							@include media-breakpoint-down(sm) {
+								@include rem(font-size, 16px);
+								line-height: 26px;
+							}
+						}
+					}
+
+					&.active {
+						.tab-heading {
+							.tab-heading-icon {
+								span {
+									&:last-of-type {
+										opacity: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+section.textarea-field-component {
+	.component-container {
+		width: calc(2240px + 260px);
+		padding: 0 130px;
+		margin: 0 auto;
+		max-width: 100%;
+
+		@include media-breakpoint-down(xxl) {
+			padding: 0 60px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 0 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+
+		.inner-component {
+			padding: 110px 0 130px 0;
+
+
+			@include media-breakpoint-down(sm) {
+				padding: 50px 0;
+			}
+
+			.component-heading {
+				margin-bottom: 70px;
+
+				h4 {
+					@include rem(font-size, 70px);
+					color: $c__black;
+
+					@include media-breakpoint-down(lg) {
+						@include rem(font-size, 55px);
+					}
+
+					@include media-breakpoint-down(md) {
+						@include rem(font-size, 40px);
+					}
+
+					@include media-breakpoint-down(sm) {
+						padding: 23px 25px;
+						@include rem(font-size, 30px);
+					}
+				}
+
+			}
+
+			.wrap-feedback-form {
+				max-width: 1430px;
+				width: 100%;
+				margin: 0 auto;
+
+				form {
+					.feedback-form {
+						.input-field {
+							textarea {
+								background-color: rgba($c__primary, 0.11);
+								color: rgba($c__primary, 0.5);
+								height: 450px;
+
+								@include media-breakpoint-down(md) {
+									height: 250px;
+								}
+							}
+
+							&.submit-field {
+								margin-top: 50px;
+								max-width: 380px;
+								margin-left: auto;
+
+								@include media-breakpoint-down(sm) {
+									width: 100%;
+									margin: 30px auto 0 auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

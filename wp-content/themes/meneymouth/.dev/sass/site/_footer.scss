@@ -1,0 +1,240 @@
+footer {
+	position: relative;
+
+	.component-container {
+		width: calc(2090px + 410px);
+		padding: 0 205px;
+		margin: 0 auto;
+		max-width: 100%;
+
+		@include media-breakpoint-down(xxl) {
+			padding: 0 100px;
+		}
+
+		@include media-breakpoint-down(xl) {
+			padding: 0 60px;
+		}
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 25px;
+		}
+
+		.inner-component {
+			padding: 80px 0;
+
+			@include media-breakpoint-down(sm) {
+				padding: 40px 0;
+			}
+
+			.footer-bg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+
+				img {
+					@include img-cover(center);
+				}
+			}
+
+			.wrap-footer-widgets {
+				@include flexbox;
+				@include align-items(flex-end);
+				margin: 0 -100px;
+				padding-bottom: 85px;
+
+
+				@include media-breakpoint-down(xl) {
+					margin: 0 -25px;
+				}
+
+				@include media-breakpoint-down(lg) {
+					@include flex-wrap(wrap);
+					padding-bottom: 60px;
+				}
+
+				.widget {
+					width: 33.33%;
+					padding: 0 100px;
+
+					@include media-breakpoint-down(xl) {
+						padding: 0 25px;
+					}
+
+					@include media-breakpoint-down(lg) {
+						width: 50%;
+					}
+
+					&:first-of-type {
+						@include media-breakpoint-down(lg) {
+							width: 100%;
+							margin-bottom: 30px;
+						}
+					}
+
+					.image {
+						max-width: 100px;
+						margin-bottom: 35px;
+
+						@include media-breakpoint-down(sm) {
+							margin: 0 auto 20px auto;
+						}
+
+						img {
+							width: 100%;
+						}
+					}
+
+					.text {
+						p {
+							@include rem(font-size, 25px);
+							font-family: $t__font-sec;
+							display: block;
+							color: rgba($c__white, 0.3);
+							margin-bottom: 0;
+							@include media-breakpoint-down(xxl) {
+								@include rem(font-size, 22px);
+							}
+						}
+
+						span {
+							@include rem(font-size, 25px);
+							font-family: $t__font-sec;
+							display: block;
+							color: rgba($c__white, 0.5);
+							line-height: 56px;
+
+							@include media-breakpoint-down(xxl) {
+								@include rem(font-size, 22px);
+								line-height: 46px;
+							}
+
+							&.white {
+								color: rgba($c__white, 1);
+							}
+						}
+					}
+
+					h6 {
+						@extend %h6;
+						margin-bottom: 40px;
+
+						@include media-breakpoint-down(xl) {
+							@include rem(font-size, 24px);
+						}
+					}
+
+					ul {
+						columns: 2;
+						padding: 0;
+						margin: 0;
+
+						@include media-breakpoint-down(sm) {
+							columns: initial;
+						}
+
+						li {
+							list-style-type: none;
+
+							a {
+								@extend %h6;
+								text-transform: initial;
+								text-decoration: none;
+								line-height: 56px;
+
+								@include media-breakpoint-down(xxl) {
+									@include rem(font-size, 22px);
+									line-height: 46px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.wrap-bottom-widgets {
+				padding-top: 55px;
+				border-top: 1px solid rgba($c__white, 0.12);
+				@include flexbox;
+				justify-content: space-between;
+				@include align-items(center);
+
+				@include media-breakpoint-down(sm) {
+					@include flex-wrap(wrap);
+					justify-content: center;
+				}
+
+				.widget {
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+						text-align: center;
+					}
+
+					ul {
+						&.social-profiles {
+							@include flexbox;
+							padding: 0;
+							margin: 0;
+
+							@include media-breakpoint-down(sm) {
+								justify-content: center;
+								margin-bottom: 30px;
+							}
+
+							li {
+								padding-right: 4px;
+								list-style-type: none;
+
+								&.twitter {
+									a {
+										background-position: -98px 0;
+										background-repeat: no-repeat;
+									}
+								}
+
+								&.facebook {
+									a {
+										background-position: 0 0;
+										background-repeat: no-repeat;
+									}
+								}
+
+								&.instagram {
+									a {
+										background-position: -197px 0;
+										background-repeat: no-repeat;
+									}
+								}
+
+								a {
+									width: 85px;
+									height: 85px;
+									display: block;
+								}
+							}
+						}
+					}
+
+					p {
+						margin: 0;
+						@include rem(font-size, 28px)
+						line-height: 56px;
+						color: $c__white;
+						font-family: $t__font-sec;
+
+						@include media-breakpoint-down(xxl) {
+							@include rem(font-size, 22px);
+							line-height: 46px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

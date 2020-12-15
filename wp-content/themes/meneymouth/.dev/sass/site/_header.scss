@@ -15,6 +15,8 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 1;
+	@include transition(background-color, 0.3s);
+
 
 	.component-container {
 		width: calc(2280px + 220px);
@@ -26,6 +28,15 @@ header {
 			padding: 0 60px;
 		}
 
+		@include media-breakpoint-down(md) {
+			padding: 0 40px;
+		}
+
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+
 		.inner-component {
 			padding: 20px 0;
 
@@ -35,6 +46,10 @@ header {
 
 				.site-logo {
 					width: 105px;
+
+					@include media-breakpoint-down(md) {
+						width: 90px;
+					}
 
 					a {
 						&.logo {
@@ -50,10 +65,37 @@ header {
 				.site-navigation {
 					width: calc(100% - 105px);
 
+					@include media-breakpoint-down(md) {
+						width: calc(100% - 90px);
+					}
+
+					@include media-breakpoint-down(sm) {
+						background-color: rgba($c__secondary, 0.9);
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						height: 100vh;
+						width: 100%;
+						@include flexbox;
+						@include align-items(center);
+						justify-content: center;
+						padding: 0 15px;
+						opacity: 0;
+						visibility: hidden;
+						@include transition(opacity, .3s);
+					}
+
 					nav {
 						@include flexbox;
 						justify-content: flex-end;
 						@include align-items(center);
+
+						@include media-breakpoint-down(sm) {
+							@include flex-wrap(wrap);
+							justify-content: center;
+						}
 
 						ul {
 							@include flexbox;
@@ -61,8 +103,21 @@ header {
 							@include align-items(center);
 							margin: 0;
 
+							@include media-breakpoint-down(sm) {
+								@include flex-wrap(wrap);
+								width: 100%;
+								justify-content: center;
+								padding: 0;
+								margin-bottom: 50px;
+							}
+
 							li {
 								list-style-type: none;
+
+								@include media-breakpoint-down(sm) {
+									width: 100%;
+									text-align: center;
+								}
 
 								&.current-menu-item,
 								&:hover {
@@ -74,6 +129,7 @@ header {
 								a {
 									display: block;
 									@extend %mm-link--menu;
+
 								}
 							}
 						}
@@ -94,8 +150,51 @@ header {
 									min-width: 240px;
 									margin-left: 30px;
 								}
+
+								@include media-breakpoint-down(lg) {
+									min-width: 160px;
+									margin-left: 20px;
+								}
+
+								@include media-breakpoint-down(md) {
+									@include rem(font-size, 20px);
+									min-width: 110px;
+									padding: 15px;
+									margin-left: 15px;
+								}
+
+								@include media-breakpoint-down(sm) {
+									@include rem(font-size, 20px);
+									min-width: 110px;
+									padding: 15px;
+									margin-left: 0;
+									width: 100%;
+									max-width: 360px;
+									min-width: initial;
+								}
 							}
 						}
+					}
+				}
+
+				.hamburger-menu-btn {
+					display: none;
+					width: 40px;
+					position: absolute;
+					right: 15px;
+					top: 50px;
+					z-index: 2;
+
+					@include media-breakpoint-down(sm) {
+						display: block;
+					}
+
+					span {
+						background-color: $c__white;
+						height: 4px;
+						margin-bottom: 5px;
+						display: block;
+						@include transition(rotate, 0.2s);
 					}
 				}
 			}

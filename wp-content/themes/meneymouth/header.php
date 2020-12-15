@@ -20,7 +20,7 @@
 
 	<?php wp_head(); ?>
 </head>
-<div class="body-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/page-bg.jpg);"></div>
+<div class="body-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/body-bg.png);"></div>
 
 
 <header class="site-header">
@@ -41,6 +41,11 @@
 						<a class="mm-button primary" href="">Sing Up</a>
 					</nav>
 				</div>
+				<a href="" class="hamburger-menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 			</div>
 		</div>
 	</div>

@@ -3,6 +3,52 @@ body {
 	overflow-x: hidden;
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
+
+	&.menu-active {
+		overflow: hidden;
+
+		header  {
+			.component-container {
+				.inner-component {
+					.wrap-header-elements {
+						.site-navigation {
+							opacity: 1;
+							visibility: visible;
+						}
+
+						.hamburger-menu-btn {
+							margin-top: 10px;
+
+							span {
+								&:nth-child(1) {
+									@include rotate(45deg);
+									margin-bottom: 1px;
+								}
+
+								&:nth-child(2) {
+									display: none;
+								}
+
+								&:last-of-type {
+									@include rotate(-45deg);
+									margin-top: -4px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	&.sticky-header {
+		header {
+			background-color: $c__secondary;
+			-webkit-box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.73);
+			box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.73);
+		}
+	}
 }
 
 html,body{

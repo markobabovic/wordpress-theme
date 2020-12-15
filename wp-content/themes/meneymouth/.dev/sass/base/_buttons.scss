@@ -10,7 +10,7 @@ input[type="submit"],
 	@extend %mm-label;
 	border-radius: 70px;
 	text-decoration: none;
-	padding: 11px 11px;
+	padding: 33px 15px;
 	display: inline-block;
 	min-width: 354px;
 	font-weight: 400;
@@ -19,6 +19,9 @@ input[type="submit"],
 
 	@include transition(all 0.3s);
 
+	&:hover {
+		border-radius: 0 !important;
+	}
 
 	&.primary {
 		background-color: $c__primary;
@@ -31,7 +34,8 @@ input[type="submit"],
 	}
 
 	@include media-breakpoint-down(xl) {
-		min-width: 255px;
+		min-width: 240px;
+		padding: 25px 15px;
 	}
 }
 

@@ -8,7 +8,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 	padding: 40px 65px 35px 65px;
 	color: rgba($c__light-black, 0.5);
 	background-color: rgba($c__white, 0.27);
-	border-radius: 69px;
+	border-radius: 67px;
 
 	@include media-breakpoint-down(lg) {
 		padding: 30px;
@@ -16,6 +16,11 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 
 	@include media-breakpoint-down(md) {
 		padding: 23px 25px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 23px 25px;
+		@include rem(font-size, 22px);
 	}
 
 	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -70,10 +75,12 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 input[type=submit] {
 	outline: 0;
 	border: 0;
+	background-color: $c__primary;
 	font-family: $t__font-main;
-	@include rem(font-size, 35);
+	@include rem(font-size, 37px);
 	padding: 40px 30px 33px 30px;
 	cursor: pointer;
+	width: 100%;
 
 	@include media-breakpoint-down(lg) {
 		padding: 30px;
@@ -82,13 +89,15 @@ input[type=submit] {
 	@include media-breakpoint-down(md) {
 		@include rem(font-size, 28px);
 		min-width: 130px;
-		padding: 23px;
+		padding: 25px;
 	}
 
 	@include media-breakpoint-down(sm) {
 		min-width: initial;
+		@include rem(font-size, 22px);
 		width: 100%;
-		max-width: 360px;
+		//max-width: 360px;
+		padding: 20px;
 	}
 
 }
