@@ -3179,7 +3179,7 @@ var homePageSlider = (function($){
 		this.id = carouselId;
 		$(this).slick({
 			slidesToShow: 2,
-			lazyLoad: 'ondemand',
+			//lazyLoad: 'ondemand',
 			slidesToScroll: 1,
 			dots: true,
 			arrows: false,
@@ -3187,7 +3187,7 @@ var homePageSlider = (function($){
 			infinite: false,
 			draggable: false,
 			responsive: [{
-					breakpoint: 768,
+				breakpoint: 768,
 					settings: {
 						dots: true,
 						slidesToShow: 1,

@@ -10,7 +10,9 @@ function theme_slug_widgets_init() {
         'id' => 'footer-widget-1',
         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'moneymouth' ),
         'before_widget' => '',
-        'after_widget' => '',
+		'after_widget' => '',
+		"before_title" => "<h6>",
+		"after_title" => "</h6>"
     ) );
 
     register_sidebar( array(
@@ -18,7 +20,9 @@ function theme_slug_widgets_init() {
         'id' => 'footer-widget-2',
         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'moneymouth' ),
         'before_widget' => '',
-        'after_widget' => '',
+		'after_widget' => '',
+		"before_title" => "<h6>",
+		"after_title" => "</h6>"
     ));
 
     register_sidebar( array(
@@ -26,7 +30,9 @@ function theme_slug_widgets_init() {
         'id' => 'footer-widget-3',
         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'moneymouth' ),
         'before_widget' => '',
-        'after_widget' => '',
+		'after_widget' => '',
+		"before_title" => "<h6>",
+		"after_title" => "</h6>"
     ));
 
     register_sidebar( array(
@@ -34,21 +40,20 @@ function theme_slug_widgets_init() {
         'id' => 'footer-widget-4',
         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'moneymouth' ),
         'before_widget' => '',
-        'after_widget' => '',
+		'after_widget' => '',
+		"before_title" => "<h6>",
+		"after_title" => "</h6>"
 	));
 
     register_sidebar( array(
-        'name' => __( 'Subscribe form', 'moneymouth' ),
-        'id' => 'subscribe-form',
+        'name' => __( 'Footer widget 5', 'moneymouth' ),
+        'id' => 'footer-widget-5',
         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'moneymouth' ),
         'before_widget' => '',
-        'after_widget' => '',
+		'after_widget' => '',
+		"before_title" => "<h6>",
+		"after_title" => "</h6>"
 	));
-
-	register_sidebar( array(
-		'name' => __( 'Shop sidebar', 'moneymouth' ),
-		'id' => 'shop-sidebar'
-	) );
 
 	register_widget( 'My_Widget' );
 }
@@ -78,13 +83,15 @@ class My_Widget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {  ?>
 
-	  <ul class="social-media">
+	  <ul class="social-profiles">
+	  <?php if(get_field('facebook_url', 'option')) : ?>
+			<li class="facebook"><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank" ></a></li>
+		<?php endif; ?>
 		<?php if(get_field('instagram_url', 'option')) : ?>
 			<li class="instagram"><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank"></a></li>
 		<?php endif; ?>
-
-		<?php if(get_field('facebook_url', 'option')) : ?>
-			<li class="facebook"><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank" ></a></li>
+		<?php if(get_field('twitter_url', 'option')) : ?>
+			<li class="twitter"><a href="<?php the_field('twitter_url', 'option') ?>" target="_blank"></a></li>
 		<?php endif; ?>
 	  </ul>
 

@@ -9,7 +9,7 @@
  */
 
 ?>
-<?php if( is_account_page() ) acf_form_head(); ?>
+
 <?php get_header(); ?>
 
 <?php
