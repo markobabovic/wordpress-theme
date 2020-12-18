@@ -15,6 +15,7 @@ header.site-header {
 	left: 0;
 	right: 0;
 	z-index: 3;
+	background-color: $c__secondary;
 	@include transition(background-color, 0.3s);
 
 	.component-container {
@@ -128,48 +129,45 @@ header.site-header {
 								a {
 									display: block;
 									@extend %mm-link--menu;
-
-								}
-							}
-						}
-
-						a {
-							&.mm-button {
-								margin-left: 55px;
-								color: $c__white;
-								padding: 25px;
-								width: auto;
-								min-width: 286px;
-								@include rem(font-size, 25px);
-								border-radius: 43px;
-
-								@include media-breakpoint-down(xxl) {
-									padding: 20px;
-									@include rem(font-size, 22px);
-									min-width: 240px;
-									margin-left: 30px;
 								}
 
-								@include media-breakpoint-down(lg) {
-									min-width: 160px;
-									margin-left: 20px;
-								}
+								&.highlight {
+									a {
+										@extend %mm-button;
+										background-color: $c__primary;
+										padding: 25px;
+										margin-left: 55px;
+										border-radius: 43px;
 
-								@include media-breakpoint-down(md) {
-									@include rem(font-size, 20px);
-									min-width: 110px;
-									padding: 15px;
-									margin-left: 15px;
-								}
+										@include media-breakpoint-down(xxl) {
+											padding: 20px;
+											@include rem(font-size, 22px);
+											min-width: 240px;
+											margin-left: 30px;
+										}
 
-								@include media-breakpoint-down(sm) {
-									@include rem(font-size, 20px);
-									min-width: 110px;
-									padding: 15px;
-									margin-left: 0;
-									width: 100%;
-									max-width: 360px;
-									min-width: initial;
+										@include media-breakpoint-down(lg) {
+											min-width: 160px;
+											margin-left: 20px;
+										}
+
+										@include media-breakpoint-down(md) {
+											@include rem(font-size, 20px);
+											min-width: 110px;
+											padding: 15px;
+											margin-left: 15px;
+										}
+
+										@include media-breakpoint-down(sm) {
+											@include rem(font-size, 20px);
+											min-width: 110px;
+											padding: 15px;
+											margin-left: 0;
+											width: 100%;
+											max-width: 360px;
+											min-width: initial;
+										}
+									}
 								}
 							}
 						}

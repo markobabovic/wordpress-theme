@@ -10,6 +10,10 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 	background-color: rgba($c__white, 0.27);
 	border-radius: 67px;
 
+	@include media-breakpoint-down(xxxl) {
+		padding: 30px;
+	}
+
 	@include media-breakpoint-down(lg) {
 		padding: 30px;
 	}
@@ -75,21 +79,24 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 input[type=submit] {
 	outline: 0;
 	border: 0;
-	background-color: $c__primary;
+
 	font-family: $t__font-main;
 	@include rem(font-size, 37px);
 	padding: 40px 30px 33px 30px;
 	cursor: pointer;
 	width: 100%;
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xxxl) {
 		padding: 30px;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 25px;
 	}
 
 	@include media-breakpoint-down(md) {
 		@include rem(font-size, 28px);
 		min-width: 130px;
-		padding: 25px;
 	}
 
 	@include media-breakpoint-down(sm) {

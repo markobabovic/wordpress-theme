@@ -38,7 +38,7 @@
 $header_logo = get_field('logo_header', 'option');
 ?>
 
-<body <?php //body_class('loading'); ?>>
+<body class="" <?php //body_class('loading'); ?>>
 
 <div class="body-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/body-bg.png);"></div>
 <header class="site-header">

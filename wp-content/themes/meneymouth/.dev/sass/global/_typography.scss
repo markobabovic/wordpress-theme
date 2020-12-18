@@ -59,6 +59,9 @@ b {
 	font-weight: normal;
 	color: $c__white;
 
+	@include media-breakpoint-down(xxxl) {
+		@include rem(font-size, 85px);
+	}
 	@include media-breakpoint-down(xxl) {
 		@include rem(font-size, 75px);
 	}
@@ -75,12 +78,16 @@ b {
 %h2 {
 	font-family: $t__font-main;
 	@include rem(font-size, 101px);
-	font-weight: 700;
+	font-weight: normal;
 	line-height: normal;
 	color: $c__primary;
 
+	@include media-breakpoint-down(xxxl) {
+		@include rem(font-size, 80px);
+	}
+
 	@include media-breakpoint-down(xxl) {
-		@include rem(font-size, 75px);
+		@include rem(font-size, 65px);
 	}
 
 	@include media-breakpoint-down(md) {
@@ -95,12 +102,20 @@ b {
 %h3 {
 	font-family: $t__font-main;
 	@include rem(font-size, 95px);
-	font-weight: 700;
+	font-weight: normal;
 	line-height: normal;
-	color: $c__black;
+	color: $c__light-black;
+
+	@include media-breakpoint-down(xxxl) {
+		@include rem(font-size, 75px);
+	}
+
+	@include media-breakpoint-down(lg) {
+		@include rem(font-size, 54px);
+	}
 
 	@include media-breakpoint-down(md) {
-		@include rem(font-size, 54px);
+		@include rem(font-size, 42px);
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -164,12 +179,16 @@ b {
 	color: rgba($c__light-black, 0.5);
 	font-weight: 400;
 
+	@include media-breakpoint-down(xxxl) {
+		@include rem(font-size, 38px);
+	}
+
 	@include media-breakpoint-down(xxl) {
-		@include rem(font-size, 35px);
+		@include rem(font-size, 30px);
 	}
 
 	@include media-breakpoint-down(xl) {
-		@include rem(font-size, 27px);
+		@include rem(font-size, 24px);
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -186,17 +205,20 @@ b {
 	@include rem(font-size, 49px);
 	line-height: 1.7;
 	color: $c__light-black;
+	@include media-breakpoint-down(xxxl) {
+		@include rem(font-size, 38px);
+	}
 
 	@include media-breakpoint-down(xxl) {
-		@include rem(font-size, 36px);
+		@include rem(font-size, 30px);
 	}
 
 	@include media-breakpoint-down(xl) {
-		@include rem(font-size, 29px);
+		@include rem(font-size, 26px);
 	}
 
 	@include media-breakpoint-down(lg) {
-		@include rem(font-size, 25px);
+		@include rem(font-size, 22px);
 	}
 
 	@include media-breakpoint-down(sm) {

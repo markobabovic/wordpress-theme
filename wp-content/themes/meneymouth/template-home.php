@@ -253,16 +253,7 @@
 
 			<div class="wrap-feedback-form">
 				<?php echo do_shortcode('[ninja_form id=2]'); ?>
-				<form action="">
-					<div class="feedback-form">
-						<div class="input-field">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
-						</div>
-						<div class="input-field submit-field">
-							<input type="submit" value="Comment">
-						</div>
-					</div>
-				</form>
+
 			</div>
 		</div>
 	</div>

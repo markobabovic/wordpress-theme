@@ -4,6 +4,12 @@ body {
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
 
+	&.transparent-header {
+		header {
+			background-color: transparent;
+		}
+	}
+
 	&.menu-active {
 		overflow: hidden;
 

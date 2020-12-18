@@ -16,7 +16,6 @@ input[type="submit"],
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: -2.74px;
-
 	@include transition(all 0.3s);
 
 	&:hover {
@@ -29,13 +28,17 @@ input[type="submit"],
 	}
 
 	&.secondary {
-		background-color: rgba($c__black, 0.11);
+		background-color: $c__grey-sec;
 		color: $c__black;
+	}
+
+	@include media-breakpoint-down(xxxl) {
+		padding: 25px 15px;
 	}
 
 	@include media-breakpoint-down(xl) {
 		min-width: 240px;
-		padding: 25px 15px;
+
 	}
 }
 
