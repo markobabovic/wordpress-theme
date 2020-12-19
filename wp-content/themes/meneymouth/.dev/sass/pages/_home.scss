@@ -975,9 +975,21 @@ section.single-post-component {
 					}
 
 					.image {
+						max-height: 1300px;
+						overflow: hidden;
+
+						@include media-breakpoint-down(xxxl) {
+							max-height: 650px;
+						}
+
 						@include media-breakpoint-down(sm) {
 							margin-bottom: 20px;
 							order: 2;
+						}
+
+
+						img {
+							@include img-cover(center);
 						}
 					}
 
@@ -1160,6 +1172,22 @@ section.single-post-component {
 					}
 				}
 			}
+		}
+	}
+}
+
+
+.single-text_component.error404 {
+	height: 800px;
+
+	.container {
+		height: 100%;
+		@include flexbox;
+		justify-content: center;
+		@include align-items(center);
+
+		.row {
+			text-align: center;
 		}
 	}
 }
