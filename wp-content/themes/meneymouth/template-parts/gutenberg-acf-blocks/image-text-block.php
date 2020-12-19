@@ -2,8 +2,9 @@
 	$heading_text = get_field("heading_text");
 	$image = get_field("image");
 	$text_content = get_field("text_content");
+	$blockClass = (isset($block['className'])) ? $block['className'] : "";
 ?>
-<section class="image-text-component">
+<section class="image-text-component <?= $blockClass; ?>">
 	<div class="component-container">
 		<div class="inner-component">
 			<div class="component-heading">

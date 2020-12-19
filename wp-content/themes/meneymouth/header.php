@@ -36,9 +36,10 @@
 
 <?php
 $header_logo = get_field('logo_header', 'option');
+$transparent_header = get_field('transparent_header');
 ?>
 
-<body class="" <?php //body_class('loading'); ?>>
+<body <?php body_class($transparent_header[0]); ?> >
 
 <div class="body-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/body-bg.png);"></div>
 <header class="site-header">

@@ -1,8 +1,9 @@
 <?php
 	$heading_text = get_field("heading_text");
 	$shortcode = get_field("shortcode");
+	$blockClass = (isset($block['className'])) ? $block['className'] : "";
 ?>
-<section class="social-share-wall-component">
+<section class="social-share-wall-component <?= $blockClass; ?>">
 	<div class="component-container">
 		<div class="inner-component">
 

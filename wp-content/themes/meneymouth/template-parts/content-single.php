@@ -11,29 +11,32 @@ $title 	= get_the_title();
 
 ?>
 
-
 <section class="single-post-component">
 	<div class="component-container">
 		<div class="inner-component">
 			<div class="single-post-content">
 				<div class="image-title">
 					<div class="image">
-						<img src="<?php echo get_template_directory_uri(); ?>//assets/images/single-post-img.jpg" />
+						<?php if ( has_post_thumbnail() ) { ?>
+							<img src="<?php the_post_thumbnail_url('large'); ?>" alt="">
+						<?php }else{ ?>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-placeholder.png" alt="">
+						<?php } ?>
 					</div>
 					<div class="post-title">
-						<h1>How to cowork in the best way in the Super offices</h1>
+						<h1><?= $title; ?></h1>
 
 						<div class="post-info">
 							<div class="author">
 								<span class="author-img">
-									<img src="<?php echo get_template_directory_uri(); ?>//assets/images/author-post-img.jpg" />
+									<img src="<?php echo get_avatar_url($get_author_id, array('size' => 450)); ?>" />
 								</span>
 								<span class="author-name">
-									Lissa Lennon
+									<?php echo get_the_author_meta('first_name', $author_id); ?>
 								</span>
 							</div>
 							<div class="publish-date">
-								<span>May, 15</span>
+								<span><?php the_date(); ?></span>
 							</div>
 						</div>
 					</div>

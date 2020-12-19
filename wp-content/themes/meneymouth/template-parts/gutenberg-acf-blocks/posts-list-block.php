@@ -2,8 +2,9 @@
 	$heading_text = get_field("heading_text");
 	$number_of_posts_to_show = get_field("number_of_posts_to_show");
 	$the_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>$number_of_posts_to_show));
+	$blockClass = (isset($block['className'])) ? $block['className'] : "";
 ?>
-<section class="slider-component">
+<section class="slider-component <?= $blockClass; ?>">
 	<div class="component-container">
 		<div class="inner-component">
 			<div class="component-heading">

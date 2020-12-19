@@ -1,7 +1,8 @@
 <?php
 	$heading_text = get_field("heading_text");
+	$blockClass = (isset($block['className'])) ? $block['className'] : "";
 ?>
-<section class="accordion-tabs-slider-component">
+<section class="accordion-tabs-slider-component <?= $blockClass; ?>">
 	<div class="component-container">
 		<div class="inner-component">
 			<div class="component-heading">

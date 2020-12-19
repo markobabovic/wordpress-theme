@@ -74,4 +74,13 @@ function mm_acf_init() {
 		'keywords'			=> array( 'feeback', 'form', 'text'),
 		)
 	);
+	acf_register_block_type(array(
+		'name'				=> 'zigzag-image-text-block',
+		'title'				=> __('Zig zag image with text block', 'moneymouth'),
+		'description'		=> __('Zig zag image with text block', 'moneymouth'),
+		'render_template'	=> 'template-parts/gutenberg-acf-blocks/zigzag-image-text-block.php',
+		'icon'				=> 'list-view',
+		'keywords'			=> array( 'image', 'post', 'text', 'zig zag'),
+		)
+	);
 }
