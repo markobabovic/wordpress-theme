@@ -16,6 +16,14 @@ $blockClass = (isset($block['className'])) ? $block['className'] : "";
 				<div class="wrap-form">
 					<?= $form_shortcode; ?>
 				</div>
+				<div class="wrap-store-buttons">
+					<a class="mm-button gold-btn" href="">
+						Google Play <span>(Comming Soon)</span>
+					</a>
+					<a class="mm-button gold-btn" href="">
+						App store <span>(Comming Soon)</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

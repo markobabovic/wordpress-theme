@@ -53,7 +53,7 @@ section.banner-component {
 					margin-bottom: 75px;
 
 					@include media-breakpoint-down(xxxl) {
-						margin-bottom: 50px;
+						margin-bottom: 45px;
 					}
 
 					h1 {
@@ -67,12 +67,12 @@ section.banner-component {
 						line-height: 90px;
 
 						@include media-breakpoint-down(xxxl) {
-							@include rem(font-size, 50px);
+							@include rem(font-size, 40px);
 							line-height: 80px;
 						}
 
 						@include media-breakpoint-down(xxl) {
-							@include rem(font-size, 40px);
+							@include rem(font-size, 35px);
 							line-height: 65px
 						}
 
@@ -90,6 +90,7 @@ section.banner-component {
 				}
 
 				.wrap-form {
+					margin-bottom: 35px;
 					form {
 						.sing-up-form {
 							@include flexbox;
@@ -129,6 +130,17 @@ section.banner-component {
 								color: $c__white;
 								text-align: center;
 							}
+						}
+					}
+				}
+
+				.wrap-store-buttons {
+					text-align: center;
+
+					.mm-button {
+						span {
+							@include rem(font-size, 23px);
+							display: block;
 						}
 					}
 				}
@@ -241,17 +253,22 @@ section.image-text-component {
 								@include rem(font-size, 37px);
 								margin-bottom: 35px;
 
-								@include media-breakpoint-down(xl) {
+								@include media-breakpoint-down(xxxl) {
 									@include rem(font-size, 29px);
+									margin-bottom: 20px;
+								}
+
+								@include media-breakpoint-down(xl) {
+									@include rem(font-size, 25px);
 								}
 
 								@include media-breakpoint-down(lg) {
-									@include rem(font-size, 25px);
+									@include rem(font-size, 22px);
 								}
 
 								@include media-breakpoint-down(sm) {
 									@include rem(font-size, 20px);
-									margin-bottom: 20px;
+									margin-bottom: 10px;
 								}
 
 								&:after {
@@ -533,6 +550,11 @@ section.accordion-tabs-slider-component {
 							color: $c__black;
 							font-family: $t__font-sec;
 							margin-bottom: 0;
+
+							@include media-breakpoint-down(xxxl) {
+								@include rem(font-size, 34px);
+								line-height: 40px;
+							}
 
 							@include media-breakpoint-down(lg) {
 								@include rem(font-size, 30px);

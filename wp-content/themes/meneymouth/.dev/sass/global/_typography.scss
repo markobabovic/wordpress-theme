@@ -60,10 +60,11 @@ b {
 	color: $c__white;
 
 	@include media-breakpoint-down(xxxl) {
-		@include rem(font-size, 85px);
-	}
-	@include media-breakpoint-down(xxl) {
 		@include rem(font-size, 75px);
+	}
+
+	@include media-breakpoint-down(xxl) {
+		@include rem(font-size, 70px);
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -71,7 +72,7 @@ b {
 	}
 
 	@include media-breakpoint-down(md) {
-		@include rem(font-size, 45px);
+		@include rem(font-size, 40px);
 	}
 }
 
@@ -83,7 +84,7 @@ b {
 	color: $c__primary;
 
 	@include media-breakpoint-down(xxxl) {
-		@include rem(font-size, 80px);
+		@include rem(font-size, 75px);
 	}
 
 	@include media-breakpoint-down(xxl) {
@@ -107,7 +108,7 @@ b {
 	color: $c__light-black;
 
 	@include media-breakpoint-down(xxxl) {
-		@include rem(font-size, 75px);
+		@include rem(font-size, 70px);
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -175,16 +176,16 @@ b {
 %mm-text {
 	font-family: $t__font-main;
 	@include rem(font-size, 47px);
-	line-height: 1.5;
+	line-height: normal;
 	color: rgba($c__light-black, 0.5);
 	font-weight: 400;
 
 	@include media-breakpoint-down(xxxl) {
-		@include rem(font-size, 38px);
+		@include rem(font-size, 33px);
 	}
 
 	@include media-breakpoint-down(xxl) {
-		@include rem(font-size, 30px);
+		@include rem(font-size, 28px);
 	}
 
 	@include media-breakpoint-down(xl) {
@@ -206,7 +207,7 @@ b {
 	line-height: 1.7;
 	color: $c__light-black;
 	@include media-breakpoint-down(xxxl) {
-		@include rem(font-size, 38px);
+		@include rem(font-size, 35px);
 	}
 
 	@include media-breakpoint-down(xxl) {
@@ -288,10 +289,13 @@ b {
 	font-family: $t__font-main;
 	@include rem(font-size, 39px);
 	font-weight: 500;
-	letter-spacing: -2.74px;
 	text-decoration: none;
 	padding: 0 35px;
 	color: rgba($c__white, 0.5);
+
+	@include media-breakpoint-down(xxxl) {
+		@include rem(font-size, 33px);
+	}
 
 	@include media-breakpoint-down(xxl) {
 		@include rem(font-size, 25px);

@@ -2542,16 +2542,16 @@ h1,
 @media (max-width: 1939.98px) {
   h1,
   .h1, section.banner-component .component-container .inner-component .banner-heading-form .text h1, section.image-text-component .component-container .inner-component .image-text-wrapper .desc h3 {
-    font-size: 85px;
-    font-size: 5.3125rem;
+    font-size: 75px;
+    font-size: 4.6875rem;
   }
 }
 
 @media (max-width: 1599.98px) {
   h1,
   .h1, section.banner-component .component-container .inner-component .banner-heading-form .text h1, section.image-text-component .component-container .inner-component .image-text-wrapper .desc h3 {
-    font-size: 75px;
-    font-size: 4.6875rem;
+    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
@@ -2566,8 +2566,8 @@ h1,
 @media (max-width: 991.98px) {
   h1,
   .h1, section.banner-component .component-container .inner-component .banner-heading-form .text h1, section.image-text-component .component-container .inner-component .image-text-wrapper .desc h3 {
-    font-size: 45px;
-    font-size: 2.8125rem;
+    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -2584,8 +2584,8 @@ h2,
 @media (max-width: 1939.98px) {
   h2,
   .h2, section.image-text-component .component-container .inner-component .component-heading h2, section.slider-component .component-container .inner-component .component-heading h2, section.accordion-tabs-slider-component .component-container .inner-component .component-heading h2 {
-    font-size: 80px;
-    font-size: 5rem;
+    font-size: 75px;
+    font-size: 4.6875rem;
   }
 }
 
@@ -2626,8 +2626,8 @@ h3,
 @media (max-width: 1939.98px) {
   h3,
   .h3, section.image-text-posts-component .component-container .inner-component .wrap-posts .item .inner-item .desc .text h3 {
-    font-size: 75px;
-    font-size: 4.6875rem;
+    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
@@ -2740,7 +2740,7 @@ p,
   font-family: "GT Walsheim Pro";
   font-size: 47px;
   font-size: 2.9375rem;
-  line-height: 1.5;
+  line-height: normal;
   color: rgba(53, 52, 53, 0.5);
   font-weight: 400;
 }
@@ -2749,8 +2749,8 @@ p,
   body,
   p,
   .mm-text, section.image-text-component .component-container .inner-component .component-heading p, section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text p, section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text ul li, section.slider-component .component-container .inner-component .component-heading p, section.accordion-tabs-slider-component .component-container .inner-component .component-heading p {
-    font-size: 38px;
-    font-size: 2.375rem;
+    font-size: 33px;
+    font-size: 2.0625rem;
   }
 }
 
@@ -2758,8 +2758,8 @@ p,
   body,
   p,
   .mm-text, section.image-text-component .component-container .inner-component .component-heading p, section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text p, section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text ul li, section.slider-component .component-container .inner-component .component-heading p, section.accordion-tabs-slider-component .component-container .inner-component .component-heading p {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 
@@ -2802,8 +2802,8 @@ p,
 @media (max-width: 1939.98px) {
   .mm-text--large,
   .has-mm-text-large-font-size, section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text p strong {
-    font-size: 38px;
-    font-size: 2.375rem;
+    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
@@ -2975,10 +2975,16 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   font-size: 39px;
   font-size: 2.4375rem;
   font-weight: 500;
-  letter-spacing: -2.74px;
   text-decoration: none;
   padding: 0 35px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1939.98px) {
+  header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li a {
+    font-size: 33px;
+    font-size: 2.0625rem;
+  }
 }
 
 @media (max-width: 1599.98px) {
@@ -3187,7 +3193,6 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   min-width: 354px;
   font-weight: 400;
   text-align: center;
-  letter-spacing: -2.74px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -3204,15 +3209,6 @@ header.site-header .component-container .inner-component .wrap-header-elements .
     -o-transition: none;
     transition: none;
   }
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-.mm-button:hover,
-header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li.highlight a:hover {
-  border-radius: 0 !important;
 }
 
 button.primary,
@@ -3235,6 +3231,25 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   color: #000000;
 }
 
+button.gold-btn,
+input[type="button"].gold-btn,
+input[type="reset"].gold-btn,
+input[type="submit"].gold-btn,
+.mm-button.gold-btn,
+header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li.highlight a.gold-btn {
+  background-color: #9e9826;
+  color: #ffffff;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.mm-button:hover,
+header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li.highlight a:hover {
+  border-radius: 0 !important;
+}
+
 @media (max-width: 1939.98px) {
   button,
   input[type="button"],
@@ -3243,6 +3258,8 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   .mm-button,
   header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li.highlight a {
     padding: 25px 15px;
+    font-size: 33px;
+    font-size: 2.0625rem;
   }
 }
 
@@ -3253,7 +3270,9 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   input[type="submit"],
   .mm-button,
   header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li.highlight a {
-    min-width: 240px;
+    padding: 20px 15px;
+    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 
@@ -3296,28 +3315,22 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 @media (max-width: 1939.98px) {
   textarea,
   input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  textarea,
-  input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
-    padding: 30px;
+    padding: 25px 30px;
+    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (max-width: 991.98px) {
   textarea,
   input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
-    padding: 23px 25px;
+    padding: 20px 25px;
   }
 }
 
 @media (max-width: 767.98px) {
   textarea,
   input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
-    padding: 23px 25px;
     font-size: 22px;
     font-size: 1.375rem;
   }
@@ -3401,18 +3414,24 @@ input[type=submit] {
 
 @media (max-width: 1939.98px) {
   input[type=submit] {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  input[type=submit] {
-    padding: 25px;
+    padding: 25px 30px;
+    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (max-width: 991.98px) {
   input[type=submit] {
+    padding: 20px 25px;
+    font-size: 28px;
+    font-size: 1.75rem;
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  input[type=submit] {
+    padding: 20px 25px;
     font-size: 28px;
     font-size: 1.75rem;
     min-width: 130px;
@@ -3421,6 +3440,8 @@ input[type=submit] {
 
 @media (max-width: 767.98px) {
   input[type=submit] {
+    font-size: 22px;
+    font-size: 1.375rem;
     min-width: initial;
     font-size: 22px;
     font-size: 1.375rem;
@@ -3577,7 +3598,7 @@ section.banner-component .component-container .inner-component .banner-heading-f
 
 @media (max-width: 1939.98px) {
   section.banner-component .component-container .inner-component .banner-heading-form .text {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
@@ -3591,16 +3612,16 @@ section.banner-component .component-container .inner-component .banner-heading-f
 
 @media (max-width: 1939.98px) {
   section.banner-component .component-container .inner-component .banner-heading-form .text p {
-    font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 80px;
   }
 }
 
 @media (max-width: 1599.98px) {
   section.banner-component .component-container .inner-component .banner-heading-form .text p {
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 35px;
+    font-size: 2.1875rem;
     line-height: 65px;
   }
 }
@@ -3619,6 +3640,10 @@ section.banner-component .component-container .inner-component .banner-heading-f
     font-size: 1.5625rem;
     line-height: 40px;
   }
+}
+
+section.banner-component .component-container .inner-component .banner-heading-form .wrap-form {
+  margin-bottom: 35px;
 }
 
 section.banner-component .component-container .inner-component .banner-heading-form .wrap-form form .sing-up-form {
@@ -3675,6 +3700,16 @@ section.banner-component .component-container .inner-component .banner-heading-f
   font-size: 1.625rem;
   color: #ffffff;
   text-align: center;
+}
+
+section.banner-component .component-container .inner-component .banner-heading-form .wrap-store-buttons {
+  text-align: center;
+}
+
+section.banner-component .component-container .inner-component .banner-heading-form .wrap-store-buttons .mm-button span {
+  font-size: 23px;
+  font-size: 1.4375rem;
+  display: block;
 }
 
 section.image-text-component .component-container {
@@ -3802,17 +3837,25 @@ section.image-text-component .component-container .inner-component .image-text-w
   margin-bottom: 35px;
 }
 
-@media (max-width: 1419.98px) {
+@media (max-width: 1939.98px) {
   section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text ul li {
     font-size: 29px;
     font-size: 1.8125rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1419.98px) {
+  section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text ul li {
+    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 
 @media (max-width: 1199.98px) {
   section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text ul li {
-    font-size: 25px;
-    font-size: 1.5625rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 
@@ -3820,7 +3863,7 @@ section.image-text-component .component-container .inner-component .image-text-w
   section.image-text-component .component-container .inner-component .image-text-wrapper .desc .text ul li {
     font-size: 20px;
     font-size: 1.25rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -4161,6 +4204,14 @@ section.accordion-tabs-slider-component .component-container .inner-component .w
   color: #000000;
   font-family: "Helvetica";
   margin-bottom: 0;
+}
+
+@media (max-width: 1939.98px) {
+  section.accordion-tabs-slider-component .component-container .inner-component .wrap-accordion-tabs-slider .tab .tab-heading h5 {
+    font-size: 34px;
+    font-size: 2.125rem;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -5161,7 +5212,6 @@ footer .component-container .inner-component .wrap-footer-widgets {
 }
 
 footer .component-container .inner-component .wrap-footer-widgets .widget {
-  width: 33.33%;
   padding: 0 100px;
 }
 
@@ -5171,16 +5221,31 @@ footer .component-container .inner-component .wrap-footer-widgets .widget {
   }
 }
 
-@media (max-width: 1199.98px) {
-  footer .component-container .inner-component .wrap-footer-widgets .widget {
-    width: 50%;
-  }
+footer .component-container .inner-component .wrap-footer-widgets .widget:first-of-type {
+  width: 70%;
 }
 
 @media (max-width: 1199.98px) {
   footer .component-container .inner-component .wrap-footer-widgets .widget:first-of-type {
     width: 100%;
     margin-bottom: 30px;
+  }
+}
+
+footer .component-container .inner-component .wrap-footer-widgets .widget:last-of-type {
+  width: 30%;
+}
+
+@media (max-width: 1199.98px) {
+  footer .component-container .inner-component .wrap-footer-widgets .widget:last-of-type {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer .component-container .inner-component .wrap-footer-widgets .widget:last-of-type {
+    text-align: center;
   }
 }
 
@@ -5248,9 +5313,6 @@ footer .component-container .inner-component .wrap-footer-widgets .widget h6 {
 }
 
 footer .component-container .inner-component .wrap-footer-widgets .widget ul {
-  -webkit-columns: 2;
-     -moz-columns: 2;
-          columns: 2;
   padding: 0;
   margin: 0;
 }
@@ -5595,6 +5657,13 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   padding: 25px;
   margin-left: 55px;
   border-radius: 43px;
+}
+
+@media (max-width: 1939.98px) {
+  header.site-header .component-container .inner-component .wrap-header-elements .site-navigation nav ul li.highlight a {
+    font-size: 33px;
+    font-size: 2.0625rem;
+  }
 }
 
 @media (max-width: 1599.98px) {

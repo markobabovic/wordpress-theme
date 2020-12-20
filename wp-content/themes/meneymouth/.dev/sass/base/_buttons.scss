@@ -15,12 +15,9 @@ input[type="submit"],
 	min-width: 354px;
 	font-weight: 400;
 	text-align: center;
-	letter-spacing: -2.74px;
 	@include transition(all 0.3s);
 
-	&:hover {
-		border-radius: 0 !important;
-	}
+
 
 	&.primary {
 		background-color: $c__primary;
@@ -32,13 +29,23 @@ input[type="submit"],
 		color: $c__black;
 	}
 
+	&.gold-btn {
+		background-color: $c__gold-color;
+		color: $c__white;
+	}
+
+	&:hover {
+		border-radius: 0 !important;
+	}
+
 	@include media-breakpoint-down(xxxl) {
 		padding: 25px 15px;
+		@include rem (font-size, 33px)
 	}
 
 	@include media-breakpoint-down(xl) {
-		min-width: 240px;
-
+		padding: 20px 15px;
+		@include rem (font-size, 28px)
 	}
 }
 

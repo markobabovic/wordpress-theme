@@ -60,21 +60,32 @@ footer {
 				}
 
 				.widget {
-					width: 33.33%;
 					padding: 0 100px;
 
 					@include media-breakpoint-down(xl) {
 						padding: 0 25px;
 					}
 
-					@include media-breakpoint-down(lg) {
-						width: 50%;
-					}
-
 					&:first-of-type {
+						width: 70%;
+
 						@include media-breakpoint-down(lg) {
 							width: 100%;
 							margin-bottom: 30px;
+
+						}
+					}
+
+					&:last-of-type {
+						width: 30%;
+
+						@include media-breakpoint-down(lg) {
+							width: 100%;
+							margin-bottom: 30px;
+						}
+
+						@include media-breakpoint-down(sm) {
+							text-align: center;
 						}
 					}
 
@@ -131,7 +142,6 @@ footer {
 					}
 
 					ul {
-						columns: 2;
 						padding: 0;
 						margin: 0;
 

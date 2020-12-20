@@ -29,7 +29,7 @@
 								<input type="email" placeholder="Enter your email">
 							</div>
 							<div class="input-field">
-								<input type="submit" class="mm-button primary" value="Sign Up">
+								<input type="submit" class="mm-button primary" value="Sign up">
 							</div>
 						</div>
 					</form>

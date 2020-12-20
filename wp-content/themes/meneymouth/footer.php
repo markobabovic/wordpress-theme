@@ -36,13 +36,7 @@
 						}
 					?>
 				</div>
-				<div class="widget">
-					<?php
-						if(is_active_sidebar('footer-widget-3')){
-							dynamic_sidebar('footer-widget-3');
-						}
-					?>
-				</div>
+
 			</div>
 			<div class="wrap-bottom-widgets">
 				<div class="widget">
