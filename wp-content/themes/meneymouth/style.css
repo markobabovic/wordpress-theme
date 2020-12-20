@@ -3504,6 +3504,13 @@ section.banner-component {
   height: 100vh;
 }
 
+@media (max-width: 767.98px) {
+  section.banner-component {
+    height: auto;
+    padding: 100px 0;
+  }
+}
+
 section.banner-component .banner-bg {
   position: absolute;
   top: 0;
@@ -3892,6 +3899,12 @@ section.slider-component .component-container .inner-component .component-headin
   margin-bottom: 90px;
 }
 
+@media (max-width: 767.98px) {
+  section.slider-component .component-container .inner-component .component-heading {
+    margin-bottom: 40px;
+  }
+}
+
 section.slider-component .component-container .inner-component .component-heading p {
   font-weight: 500;
   margin: 0;
@@ -3940,6 +3953,12 @@ section.slider-component .component-container .inner-component .wrap-slider-item
   overflow: hidden;
 }
 
+@media (max-width: 767.98px) {
+  section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image {
+    border-radius: 15px;
+  }
+}
+
 section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image img {
   width: 100%;
   height: 100%;
@@ -3967,6 +3986,7 @@ section.slider-component .component-container .inner-component .wrap-slider-item
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 15px;
 }
 
 section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .text span {
@@ -3992,6 +4012,13 @@ section.slider-component .component-container .inner-component .wrap-slider-item
   }
 }
 
+@media (max-width: 767.98px) {
+  section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .text span {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
 section.slider-component .component-container .inner-component .wrap-slider-items ul.slick-dots {
   padding: 0;
   display: -webkit-box;
@@ -4006,6 +4033,12 @@ section.slider-component .component-container .inner-component .wrap-slider-item
       -ms-flex-pack: center;
           justify-content: center;
   margin: 75px 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+  section.slider-component .component-container .inner-component .wrap-slider-items ul.slick-dots {
+    margin: 40px 0 0 0;
+  }
 }
 
 section.slider-component .component-container .inner-component .wrap-slider-items ul.slick-dots li {
@@ -4091,6 +4124,12 @@ section.accordion-tabs-slider-component .component-container .inner-component .w
   box-shadow: 0px 0px 29px 13px rgba(0, 0, 0, 0.07);
 }
 
+@media (max-width: 767.98px) {
+  section.accordion-tabs-slider-component .component-container .inner-component .wrap-accordion-tabs-slider .tab {
+    margin-bottom: 15px;
+  }
+}
+
 section.accordion-tabs-slider-component .component-container .inner-component .wrap-accordion-tabs-slider .tab .tab-heading {
   position: relative;
   cursor: pointer;
@@ -4111,7 +4150,7 @@ section.accordion-tabs-slider-component .component-container .inner-component .w
 
 @media (max-width: 767.98px) {
   section.accordion-tabs-slider-component .component-container .inner-component .wrap-accordion-tabs-slider .tab .tab-heading {
-    padding: 15px;
+    padding: 15px 40px 15px 15px;
   }
 }
 
@@ -4161,7 +4200,7 @@ section.accordion-tabs-slider-component .component-container .inner-component .w
 @media (max-width: 767.98px) {
   section.accordion-tabs-slider-component .component-container .inner-component .wrap-accordion-tabs-slider .tab .tab-heading .tab-heading-icon {
     width: 20px;
-    right: -5px;
+    right: 15px;
   }
 }
 
@@ -4295,6 +4334,12 @@ section.textarea-field-component .component-container .inner-component .componen
   margin-bottom: 70px;
 }
 
+@media (max-width: 767.98px) {
+  section.textarea-field-component .component-container .inner-component .component-heading {
+    margin-bottom: 30px;
+  }
+}
+
 section.textarea-field-component .component-container .inner-component .component-heading h4 {
   font-size: 70px;
   font-size: 4.375rem;
@@ -4337,12 +4382,20 @@ section.textarea-field-component .component-container .inner-component .wrap-fee
 }
 
 section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-form-fields-required {
-  font-size: 30px;
+  font-size: 20px;
+  display: none;
 }
 
 section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-error-msg {
   font-size: 30px;
   padding-left: 20px;
+}
+
+@media (max-width: 767.98px) {
+  section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-error-msg {
+    font-size: 20px;
+    padding-left: 0;
+  }
 }
 
 section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-form-content {
@@ -4404,6 +4457,14 @@ section.textarea-field-component .component-container .inner-component .wrap-fee
 @media (max-width: 991.98px) {
   section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-field-container textarea {
     height: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-field-container textarea {
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
   }
 }
 
@@ -5396,6 +5457,12 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   }
 }
 
+@media (max-width: 767.98px) {
+  header.site-header .component-container .inner-component .wrap-header-elements .site-logo {
+    width: 50px;
+  }
+}
+
 header.site-header .component-container .inner-component .wrap-header-elements .site-logo a.logo {
   display: block;
 }
@@ -5416,7 +5483,7 @@ header.site-header .component-container .inner-component .wrap-header-elements .
 
 @media (max-width: 767.98px) {
   header.site-header .component-container .inner-component .wrap-header-elements .site-navigation {
-    background-color: rgba(82, 181, 68, 0.9);
+    background-color: #52B544;
     position: absolute;
     top: 0;
     left: 0;
@@ -5575,7 +5642,7 @@ header.site-header .component-container .inner-component .wrap-header-elements .
   width: 40px;
   position: absolute;
   right: 15px;
-  top: 50px;
+  top: 35px;
   z-index: 2;
 }
 

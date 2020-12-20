@@ -2,6 +2,11 @@ section.banner-component {
 	position: relative;
 	height: 100vh;
 
+	@include media-breakpoint-down(sm) {
+		height: auto;
+		padding: 100px 0;
+	}
+
 	.banner-bg {
 		position: absolute;
 		top: 0;
@@ -318,6 +323,10 @@ section.slider-component {
 			.component-heading {
 				margin-bottom: 90px;
 
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 40px;
+				}
+
 				h2 {
 					@extend %h2;
 				}
@@ -360,6 +369,10 @@ section.slider-component {
 							border-radius: 22px;
 							overflow: hidden;
 
+							@include media-breakpoint-down(sm) {
+								border-radius: 15px;
+							}
+
 							img {
 								@include img-cover(center);
 							}
@@ -375,6 +388,7 @@ section.slider-component {
 							@include flexbox;
 							justify-content: center;
 							@include align-items(center);
+							padding: 0 15px;
 
 							span {
 								@include rem(font-size, 75px);
@@ -390,6 +404,10 @@ section.slider-component {
 								@include media-breakpoint-down(md) {
 									@include rem(font-size, 36px);
 								}
+
+								@include media-breakpoint-down(sm) {
+									@include rem(font-size, 18px);
+								}
 							}
 						}
 					}
@@ -402,6 +420,10 @@ section.slider-component {
 						@include align-items(center);
 						justify-content: center;
 						margin: 75px 0 0 0;
+
+						@include media-breakpoint-down(sm) {
+							margin: 40px 0 0 0;
+						}
 
 						li {
 							list-style-type: none;
@@ -484,6 +506,10 @@ section.accordion-tabs-slider-component {
 					-webkit-box-shadow: 0px 0px 29px 13px rgba(0, 0, 0, 0.07);
 					box-shadow: 0px 0px 29px 13px rgba(0, 0, 0, 0.07);
 
+					@include media-breakpoint-down(sm) {
+						margin-bottom: 15px;
+					}
+
 					.tab-heading {
 						position: relative;
 						cursor: pointer;
@@ -498,7 +524,7 @@ section.accordion-tabs-slider-component {
 						}
 
 						@include media-breakpoint-down(sm) {
-							padding: 15px;
+							padding: 15px 40px 15px 15px;
 						}
 
 						h5 {
@@ -533,7 +559,7 @@ section.accordion-tabs-slider-component {
 
 							@include media-breakpoint-down(sm) {
 								width: 20px;
-								right: -5px;
+								right: 15px;
 							}
 
 							span {
@@ -650,6 +676,10 @@ section.textarea-field-component {
 			.component-heading {
 				margin-bottom: 70px;
 
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 30px
+				}
+
 				h4 {
 					@include rem(font-size, 70px);
 					color: $c__black;
@@ -680,12 +710,18 @@ section.textarea-field-component {
 				.nf-form-cont {
 					form {
 						.nf-form-fields-required {
-							font-size: 30px;
+							font-size: 20px;
+							display: none;
 						}
 
 						.nf-error-msg {
 							font-size: 30px;
 							padding-left: 20px;
+
+							@include media-breakpoint-down(sm) {
+								font-size: 20px;
+								padding-left: 0;
+							}
 						}
 
 						.nf-form-content {
@@ -736,9 +772,14 @@ section.textarea-field-component {
 								padding: 40px 65px 35px 65px;
 								border: none;
 
-
 								@include media-breakpoint-down(md) {
 									height: 250px;
+								}
+
+								@include media-breakpoint-down(sm) {
+									border-radius: 15px;
+									padding: 20px;
+									font-size: 20px;
 								}
 							}
 						}
