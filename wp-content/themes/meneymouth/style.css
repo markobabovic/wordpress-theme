@@ -4687,12 +4687,7 @@ section.image-text-posts-component .component-container .inner-component .wrap-p
 }
 
 section.image-text-posts-component .component-container .inner-component .wrap-posts .item .inner-item .image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  max-width: 100%;
 }
 
 section.image-text-posts-component .component-container .inner-component .wrap-posts .item .inner-item .desc {

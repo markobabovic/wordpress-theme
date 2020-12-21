@@ -927,7 +927,7 @@ section.image-text-posts-component {
 							}
 
 							img {
-								@include img-cover(center);
+								max-width: 100%;
 							}
 						}
 
