@@ -3152,6 +3152,22 @@ h1, h2, h3, h4, h5, h6,
   stroke: #353435 !important;
 }
 
+.mm-color--gold {
+  color: #eac759 !important;
+}
+
+.mm-bg-color--gold {
+  background-color: #eac759 !important;
+}
+
+.mm-fill--gold {
+  fill: #eac759 !important;
+}
+
+.mm-stroke--gold {
+  stroke: #eac759 !important;
+}
+
 /*! Input fields  */
 /*! Links  */
 a {
@@ -3176,6 +3192,10 @@ body.white a:hover, body.white a:focus {
 
 body.light-black a:hover, body.light-black a:focus {
   color: #353435;
+}
+
+body.gold a:hover, body.gold a:focus {
+  color: #eac759;
 }
 
 /*! Icons  */
@@ -4530,8 +4550,8 @@ section.textarea-field-component .component-container .inner-component .wrap-fee
 section.textarea-field-component .component-container .inner-component .wrap-feedback-form .nf-form-cont form .nf-field-container textarea {
   background-color: rgba(43, 104, 33, 0.11);
   color: rgba(43, 104, 33, 0.5);
-  height: 450px;
-  border-radius: 67px;
+  height: 350px;
+  border-radius: 50px;
   font-size: 34px;
   font-size: 2.125rem;
   letter-spacing: -2.74px;
