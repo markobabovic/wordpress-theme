@@ -3545,7 +3545,6 @@ section.banner-component .banner-bg {
   z-index: -1;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: none !important;
 }
 
 section.banner-component .banner-bg img {
@@ -3704,6 +3703,10 @@ section.banner-component .component-container .inner-component .banner-heading-f
   font-size: 1.625rem;
   color: #ffffff;
   text-align: center;
+}
+
+section.banner-component .component-container .inner-component .banner-heading-form .wrap-form form input[type=email] {
+  background-color: #ffffff;
 }
 
 section.banner-component .component-container .inner-component .banner-heading-form .wrap-store-buttons {
@@ -5472,6 +5475,7 @@ footer .component-container .inner-component .wrap-bottom-widgets .widget p {
   z-index: -1;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  display: none;
 }
 
 header.site-header {

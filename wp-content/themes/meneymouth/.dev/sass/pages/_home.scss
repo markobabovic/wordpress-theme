@@ -16,7 +16,7 @@ section.banner-component {
 		z-index: -1;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		background-image: none!important;
+		//background-image: none!important;
 
 		img {
 			@include img-cover(center);
@@ -130,6 +130,10 @@ section.banner-component {
 								color: $c__white;
 								text-align: center;
 							}
+						}
+
+						input[type=email] {
+							background-color: $c__white;
 						}
 					}
 				}
