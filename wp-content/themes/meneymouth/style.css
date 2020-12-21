@@ -3994,11 +3994,25 @@ section.slider-component .component-container .inner-component .wrap-slider-item
 section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image {
   border-radius: 22px;
   overflow: hidden;
+  height: 635px;
+}
+
+@media (max-width: 1939.98px) {
+  section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1419.98px) {
+  section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image {
+    height: 350px;
+  }
 }
 
 @media (max-width: 767.98px) {
   section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image {
     border-radius: 15px;
+    height: 280px;
   }
 }
 

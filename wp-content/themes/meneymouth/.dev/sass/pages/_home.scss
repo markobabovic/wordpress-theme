@@ -385,9 +385,19 @@ section.slider-component {
 						.image {
 							border-radius: 22px;
 							overflow: hidden;
+							height: 635px;
+
+							@include media-breakpoint-down(xxxl) {
+								height: 550px;
+							}
+
+							@include media-breakpoint-down(xl) {
+								height: 350px;
+							}
 
 							@include media-breakpoint-down(sm) {
 								border-radius: 15px;
+								height: 280px;
 							}
 
 							img {
