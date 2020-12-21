@@ -32,11 +32,12 @@ $title 	= get_the_title();
 									<img src="<?php echo get_avatar_url($get_author_id, array('size' => 450)); ?>" />
 								</span>
 								<span class="author-name">
-									<?php echo get_the_author_meta('first_name', $author_id); ?>
+									<?php //echo get_the_author_meta('first_name', $author_id); ?>
+									MoneyMouth
 								</span>
 							</div>
 							<div class="publish-date">
-								<span><?php the_date(); ?></span>
+								<span><?php //the_date(); ?></span>
 							</div>
 						</div>
 					</div>
