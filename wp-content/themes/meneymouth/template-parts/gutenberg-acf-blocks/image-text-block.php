@@ -28,7 +28,7 @@
 							$button_url = get_sub_field('button_url');
 							?>
 							<?php if($button_label): ?>
-							<a class="mm-button gold-btn" href="<?= $button_url; ?>"><?= $button_label; ?></a>
+							<a class="mm-button primary" href="<?= $button_url; ?>"><?= $button_label; ?></a>
 							<?php endif; ?>
 
 						<?php endwhile; ?>

@@ -75,12 +75,12 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]) {
 input[type=submit] {
 	outline: 0;
 	border: 0;
-
 	font-family: $t__font-main;
 	@include rem(font-size, 37px);
 	padding: 40px 30px 33px 30px;
 	cursor: pointer;
 	width: 100%;
+
 	@include media-breakpoint-down(xxxl) {
 		padding: 25px 30px;
 		@include rem(font-size, 30px);
@@ -105,6 +105,10 @@ input[type=submit] {
 		width: 100%;
 		//max-width: 360px;
 		padding: 20px;
+	}
+
+	&:hover {
+		border-radius: 0;
 	}
 
 }

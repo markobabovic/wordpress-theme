@@ -29,7 +29,7 @@
 								<input type="email" placeholder="Enter your email">
 							</div>
 							<div class="input-field">
-								<input type="submit" class="mm-button primary" value="Sign Up">
+								<input type="submit" class="mm-button gold-btn" value="Sign Up">
 							</div>
 						</div>
 					</form>
@@ -72,7 +72,7 @@
 							<li>Create a bet based on your knowledge and strengths or find a bet already open based on your interests</li>
 						</ul>
 					</div>
-					<a class="mm-button primary" href="">Download now</a>
+					<a class="mm-button gold-btn" href="">Download now</a>
 					<a class="mm-button secondary" href="">Learn more</a>
 				</div>
 			</div>

@@ -124,6 +124,7 @@ header.site-header {
 								}
 
 								&.current-menu-item,
+								&.current_page_item,
 								&:hover {
 									a {
 										color: rgba($c__white, 1.0);
@@ -142,9 +143,11 @@ header.site-header {
 										padding: 25px;
 										margin-left: 55px;
 										border-radius: 43px;
+
 										@include media-breakpoint-down(xxxl) {
 											@include rem(font-size, 33px);
 										}
+
 										@include media-breakpoint-down(xxl) {
 											padding: 20px;
 											@include rem(font-size, 22px);

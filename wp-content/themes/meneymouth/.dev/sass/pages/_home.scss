@@ -138,9 +138,19 @@ section.banner-component {
 					text-align: center;
 
 					.mm-button {
+
+						&:first-of-type {
+							@include media-breakpoint-down(sm) {
+								margin-bottom: 30px;
+							}
+						}
 						span {
 							@include rem(font-size, 23px);
 							display: block;
+
+							@include media-breakpoint-down(sm) {
+								@include rem(font-size, 16px);
+							}
 						}
 					}
 				}
@@ -297,7 +307,7 @@ section.image-text-component {
 							margin: 0 auto;
 						}
 
-						&.primary {
+						&.gold-btn {
 							margin-right: 30px;
 
 							@include media-breakpoint-down(lg) {
@@ -388,7 +398,7 @@ section.slider-component {
 							height: 635px;
 
 							@include media-breakpoint-down(xxxl) {
-								height: 550px;
+								height: 450px;
 							}
 
 							@include media-breakpoint-down(xl) {
@@ -399,6 +409,7 @@ section.slider-component {
 								border-radius: 15px;
 								height: 280px;
 							}
+
 
 							img {
 								@include img-cover(center);
@@ -894,7 +905,6 @@ section.image-text-posts-component {
 						.image {
 							width: 40%;
 							overflow: hidden;
-							//border-radius: 50%;
 							padding: 0 80px;
 
 							@include media-breakpoint-down(xxxl) {
@@ -917,8 +927,7 @@ section.image-text-posts-component {
 							}
 
 							img {
-								//@include img-cover(center);
-								max-width: 100%;
+								@include img-cover(center);
 							}
 						}
 
