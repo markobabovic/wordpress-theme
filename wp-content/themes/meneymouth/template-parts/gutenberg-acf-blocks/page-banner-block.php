@@ -17,12 +17,33 @@ $blockClass = (isset($block['className'])) ? $block['className'] : "";
 					<?= $form_shortcode; ?>
 				</div>
 				<div class="wrap-store-buttons">
-					<a class="mm-button gold-btn" href="">
-						Google Play <span>(Comming Soon)</span>
-					</a>
-					<a class="mm-button gold-btn" href="">
-						App store <span>(Comming Soon)</span>
-					</a>
+
+					<?php if( have_rows('cta_button_1') ): ?>
+						<?php while( have_rows('cta_button_1') ): the_row();
+							// Get sub field values.
+							$button_label = get_sub_field('button_label');
+							$button_url = get_sub_field('button_url');
+							?>
+							<?php if($button_label): ?>
+							<a class="mm-button gold-btn" href="<?= $button_url; ?>"><?= $button_label; ?></a>
+							<?php endif; ?>
+
+						<?php endwhile; ?>
+					<?php endif; ?>
+
+					<?php if( have_rows('cta_button_2') ): ?>
+						<?php while( have_rows('cta_button_2') ): the_row();
+							// Get sub field values.
+							$button_label = get_sub_field('button_label');
+							$button_url = get_sub_field('button_url');
+							?>
+							<?php if($button_label): ?>
+							<a class="mm-button gold-btn" href="<?= $button_url; ?>"><?= $button_label; ?></a>
+							<?php endif; ?>
+
+						<?php endwhile; ?>
+					<?php endif; ?>
+
 				</div>
 			</div>
 		</div>
