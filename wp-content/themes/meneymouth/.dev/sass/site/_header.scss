@@ -16,7 +16,7 @@ header.site-header {
 	left: 0;
 	right: 0;
 	z-index: 3;
-	background-color: $c__secondary;
+	background-color: $c__primary;
 	@include transition(background-color, 0.3s);
 
 	.component-container {
@@ -75,7 +75,7 @@ header.site-header {
 					}
 
 					@include media-breakpoint-down(sm) {
-						background-color: $c__secondary;
+						background-color: $c__primary;
 						position: absolute;
 						top: 0;
 						left: 0;

@@ -400,6 +400,7 @@ section.slider-component {
 							border-radius: 22px;
 							overflow: hidden;
 							height: 635px;
+							position: relative;
 
 							@include media-breakpoint-down(xxxl) {
 								height: 450px;
@@ -414,6 +415,15 @@ section.slider-component {
 								height: 280px;
 							}
 
+							&:before {
+								content: "";
+								top: 0;
+								left: 0;
+								bottom: 0;
+								right: 0;
+								background-color: rgba($color: #000000, $alpha: 0.5);
+								position: absolute;
+							}
 
 							img {
 								@include img-cover(center);
@@ -881,7 +891,7 @@ section.image-text-posts-component {
 					}
 
 					@include media-breakpoint-down(sm) {
-						margin-bottom: 40px;
+						margin-bottom: 0px;
 					}
 
 					.inner-item {
@@ -904,6 +914,23 @@ section.image-text-posts-component {
 						@include media-breakpoint-down(sm) {
 							@include flex-wrap(wrap);
 							margin: 0;
+							text-align: center;
+							position: relative;
+							padding: 40px 15px;
+
+							&:after {
+								content: "";
+								width: 100%;
+								height: 50px;
+								background: url('assets/images/separator-green.jpg');
+								background-repeat: no-repeat;
+								background-size: auto 100%;
+								background-position: center center;
+								position: absolute;
+								top: -40px;
+								left: 0;
+								right: 0;
+							}
 						}
 
 						.image {
@@ -1001,12 +1028,27 @@ section.image-text-posts-component {
 
 					&:nth-child(even) {
 						.inner-item {
+
 							.image {
 								order: 2;
 							}
 
+							.mm-button.primary {
+								@include media-breakpoint-down(sm) {
+									// background-color: $c__grey-sec;
+									// color: $c__black;
+								}
+							}
+
 							.text {
 								order: 1;
+
+								@include media-breakpoint-down(sm) {
+									*, h3 {
+										//color: $c__white;
+									}
+
+								}
 							}
 						}
 					}
@@ -1064,6 +1106,17 @@ section.single-post-component {
 					.image {
 						max-height: 1300px;
 						overflow: hidden;
+						position: relative;
+
+						&:before {
+							content: "";
+							top: 0;
+							left: 0;
+							bottom: 0;
+							right: 0;
+							background-color: rgba($color: #000000, $alpha: 0.5);
+							position: absolute;
+						}
 
 						@include media-breakpoint-down(xxxl) {
 							max-height: 650px;

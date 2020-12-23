@@ -3168,6 +3168,38 @@ h1, h2, h3, h4, h5, h6,
   stroke: #eac759 !important;
 }
 
+.mm-color--dark-grey {
+  color: #828282 !important;
+}
+
+.mm-bg-color--dark-grey {
+  background-color: #828282 !important;
+}
+
+.mm-fill--dark-grey {
+  fill: #828282 !important;
+}
+
+.mm-stroke--dark-grey {
+  stroke: #828282 !important;
+}
+
+.mm-color--grey {
+  color: #999999 !important;
+}
+
+.mm-bg-color--grey {
+  background-color: #999999 !important;
+}
+
+.mm-fill--grey {
+  fill: #999999 !important;
+}
+
+.mm-stroke--grey {
+  stroke: #999999 !important;
+}
+
 /*! Input fields  */
 /*! Links  */
 a {
@@ -3196,6 +3228,14 @@ body.light-black a:hover, body.light-black a:focus {
 
 body.gold a:hover, body.gold a:focus {
   color: #eac759;
+}
+
+body.dark-grey a:hover, body.dark-grey a:focus {
+  color: #828282;
+}
+
+body.grey a:hover, body.grey a:focus {
+  color: #999999;
 }
 
 /*! Icons  */
@@ -4035,6 +4075,7 @@ section.slider-component .component-container .inner-component .wrap-slider-item
   border-radius: 22px;
   overflow: hidden;
   height: 635px;
+  position: relative;
 }
 
 @media (max-width: 1939.98px) {
@@ -4054,6 +4095,16 @@ section.slider-component .component-container .inner-component .wrap-slider-item
     border-radius: 15px;
     height: 280px;
   }
+}
+
+section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image:before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
 }
 
 section.slider-component .component-container .inner-component .wrap-slider-items .slide .inner-slide .image img {
@@ -4632,7 +4683,7 @@ section.image-text-posts-component .component-container .inner-component .wrap-p
 
 @media (max-width: 767.98px) {
   section.image-text-posts-component .component-container .inner-component .wrap-posts .item {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 }
 
@@ -4671,6 +4722,22 @@ section.image-text-posts-component .component-container .inner-component .wrap-p
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
+    text-align: center;
+    position: relative;
+    padding: 40px 15px;
+  }
+  section.image-text-posts-component .component-container .inner-component .wrap-posts .item .inner-item:after {
+    content: "";
+    width: 100%;
+    height: 50px;
+    background: url("assets/images/separator-green.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -4864,6 +4931,17 @@ section.single-post-component .component-container .inner-component .single-post
 section.single-post-component .component-container .inner-component .single-post-content .image-title .image {
   max-height: 1300px;
   overflow: hidden;
+  position: relative;
+}
+
+section.single-post-component .component-container .inner-component .single-post-content .image-title .image:before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
 }
 
 @media (max-width: 1939.98px) {
@@ -5504,7 +5582,7 @@ header.site-header {
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: #52B544;
+  background-color: #2B6821;
   -webkit-transition: background-color, 0.3s;
   -o-transition: background-color, 0.3s;
   transition: background-color, 0.3s;
@@ -5594,7 +5672,7 @@ header.site-header .component-container .inner-component .wrap-header-elements .
 
 @media (max-width: 767.98px) {
   header.site-header .component-container .inner-component .wrap-header-elements .site-navigation {
-    background-color: #52B544;
+    background-color: #2B6821;
     position: absolute;
     top: 0;
     left: 0;

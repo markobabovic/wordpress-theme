@@ -23,7 +23,7 @@
 							<div class="image">
 
 							<?php if ( has_post_thumbnail() ) { ?>
-								<img src="<?php the_post_thumbnail_url('large'); ?>" alt="">
+								<img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
 							<?php }else{ ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-placeholder.png" alt="">
 							<?php } ?>
