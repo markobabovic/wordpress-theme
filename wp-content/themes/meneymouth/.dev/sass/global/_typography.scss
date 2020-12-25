@@ -74,6 +74,11 @@ b {
 	@include media-breakpoint-down(md) {
 		@include rem(font-size, 40px);
 	}
+
+	@include media-breakpoint-down(sm) {
+		@include rem(font-size, 40px);
+		line-height: 42px;
+	}
 }
 
 %h2 {

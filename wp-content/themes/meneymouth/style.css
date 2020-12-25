@@ -2539,6 +2539,15 @@ h1,
   }
 }
 
+@media (max-width: 767.98px) {
+  h1,
+  .h1, section.banner-component .component-container .inner-component .banner-heading-form .text h1, section.image-text-component .component-container .inner-component .image-text-wrapper .desc h3 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 42px;
+  }
+}
+
 h2,
 .h2, section.image-text-component .component-container .inner-component .component-heading h2, section.slider-component .component-container .inner-component .component-heading h2, section.accordion-tabs-slider-component .component-container .inner-component .component-heading h2 {
   font-family: "Catamaran", sans-serif;
