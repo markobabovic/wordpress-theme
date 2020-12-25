@@ -79,7 +79,7 @@ add_action( 'after_setup_theme', 'mm_setup' );
  */
 function mm_scripts() {
 
-	//wp_enqueue_style( 'mm-google-fonts-merriweather', 'https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+	wp_enqueue_style( 'mm-google-fonts', 'https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700&display=swap');
 
 	wp_enqueue_style( 'mm-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'mm-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '20200720', true );
